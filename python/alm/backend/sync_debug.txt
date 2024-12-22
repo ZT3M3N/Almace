@@ -1,0 +1,38 @@
+2024-12-20 09:20:59,092 - INFO - Iniciando proceso de sincronización
+2024-12-20 09:21:06,181 - INFO - Se agregaron 5273 registros nuevos
+2024-12-20 09:21:06,198 - INFO - Ejemplo de registro insertado:
+ID=5124506
+Folio=PC0001010031695
+Código=7506192503358
+-------------------
+2024-12-20 09:21:06,198 - INFO - Ejemplo de registro insertado:
+ID=5124507
+Folio=PC0001010031695
+Código=75062910
+-------------------
+2024-12-20 09:21:06,198 - INFO - Ejemplo de registro insertado:
+ID=5124508
+Folio=PC0001010031695
+Código=7506306210004
+-------------------
+2024-12-20 09:21:06,199 - INFO - Ejemplo de registro insertado:
+ID=5124509
+Folio=PC0001010031695
+Código=7506309893464
+-------------------
+2024-12-20 09:21:06,199 - INFO - Ejemplo de registro insertado:
+ID=5124510
+Folio=PC0001010031695
+Código=7506339390254
+-------------------
+2024-12-20 09:21:06,201 - INFO - 127.0.0.1 - - [20/Dec/2024 09:21:06] "POST /sync HTTP/1.1" 200 -
+2024-12-20 09:21:06,892 - INFO - 127.0.0.1 - - [20/Dec/2024 09:21:06] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-20 09:46:13,565 - INFO - 127.0.0.1 - - [20/Dec/2024 09:46:13] "OPTIONS /data/1 HTTP/1.1" 200 -
+2024-12-20 09:46:14,169 - INFO - 127.0.0.1 - - [20/Dec/2024 09:46:14] "PUT /data/1 HTTP/1.1" 200 -
+2024-12-20 09:46:18,289 - INFO - Iniciando proceso de sincronización
+2024-12-20 09:46:18,587 - INFO - 127.0.0.1 - - [20/Dec/2024 09:46:18] "POST /sync HTTP/1.1" 200 -
+2024-12-20 09:46:19,525 - INFO - 127.0.0.1 - - [20/Dec/2024 09:46:19] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-20 09:46:37,080 - INFO - 127.0.0.1 - - [20/Dec/2024 09:46:37] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-20 09:46:38,134 - INFO - 127.0.0.1 - - [20/Dec/2024 09:46:38] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-20 09:47:05,969 - INFO - 127.0.0.1 - - [20/Dec/2024 09:47:05] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-20 09:47:06,704 - INFO - 127.0.0.1 - - [20/Dec/2024 09:47:06] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -

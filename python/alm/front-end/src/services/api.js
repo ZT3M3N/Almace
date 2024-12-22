@@ -1,8 +1,8 @@
 import axios from "axios";
 
 const api = axios.create({
-  // baseURL: `http://${window.location.hostname}:5000`,
-  baseURL: `https://7mbmd9mj-5000.usw3.devtunnels.ms/`,
+  baseURL: `http://${window.location.hostname}:5000`,
+  // baseURL: `https://7mbmd9mj-5000.usw3.devtunnels.ms/`,
   timeout: 200000,
 });
 

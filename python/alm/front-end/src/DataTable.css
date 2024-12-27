@@ -163,7 +163,7 @@ button:hover {
 /* Estilos para tablets (600px - 1024px) */
 @media screen and (min-width: 600px) and (max-width: 1024px) {
   .table-container {
-    width: 100%;
+    width: 160%;
     overflow: hidden;
   }
 
@@ -196,4 +196,67 @@ button:hover {
     padding: 5px;
     overflow-wrap: break-word;
   }
+}
+
+.filter-select {
+  width: 100%;
+  padding: 6px;
+  margin: 4px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 12px;
+  background-color: white;
+  color: black;
+}
+
+.sort-buttons {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.sort-button {
+  padding: 2px 5px;
+  margin: 0 2px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.sort-button.active-asc {
+  color: #4caf50;
+}
+
+.sort-button.active-desc {
+  color: #f44336;
+}
+
+/* Ajustes para móviles */
+@media screen and (min-width: 320px) and (max-width: 600px) {
+  .filter-select {
+    width: 50%;
+    padding: 8px;
+    margin-top: 5px;
+    font-size: 12px;
+  }
+}
+
+.edit-button.disabled {
+  background-color: #cccccc !important;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.edit-button.disabled:hover {
+  opacity: 0.6;
+}
+
+.export-button {
+  background-color: #2196f3 !important;
+  color: white;
+  margin-left: 10px;
+}
+
+.export-button:hover {
+  opacity: 0.8;
 }

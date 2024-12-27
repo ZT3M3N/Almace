@@ -1,77 +1,14 @@
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, send_file
 from database.mssql_connection import get_mssql_connection
 from database.sqlite_connection import get_sqlite_connection
 import sqlite3
 import pandas as pd
 from flask_cors import CORS
 import os
+from openpyxl import Workbook
 
 app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "*"}})  # Habilitar CORS para todas las rutas
-
-
-@app.route("/test", methods=["GET"])
-def test_endpoint():
-    try:
-        conn = get_sqlite_connection()
-        cursor = conn.cursor()
-        # Modificamos para usar las columnas correctas
-        cursor.execute("SELECT * FROM folios LIMIT 10")
-        rows = cursor.fetchall()
-
-        # Obtener nombres de columnas
-        cursor.execute("PRAGMA table_info(folios)")
-        columns = [col[1] for col in cursor.fetchall()]
-
-        # Formatear resultado
-        result = []
-        for row in rows:
-            row_dict = {}
-            for i, col_name in enumerate(columns):
-                row_dict[col_name] = row[i]
-            result.append(row_dict)
-
-        conn.close()
-
-        if not result:
-            return jsonify({"message": "No data found"}), 404
-
-        return jsonify(result)
-
-    except Exception as e:
-        return jsonify({"error": f"Error: {str(e)}"}), 500
-
-
-@app.route("/debug", methods=["GET"])
-def debug_connection():
-    try:
-        conn = get_sqlite_connection()
-        cursor = conn.cursor()
-
-        # Verifica si la tabla existe
-        cursor.execute(
-            "SELECT name FROM sqlite_master WHERE type='table' AND name='folios'"
-        )
-        table_exists = cursor.fetchone()
-
-        # Si la tabla existe, obtiene la información de las columnas
-        columns_info = []
-        if table_exists:
-            cursor.execute("PRAGMA table_info(folios)")
-            columns_info = cursor.fetchall()
-
-        conn.close()
-
-        return jsonify(
-            {
-                "table_exists": bool(table_exists),
-                "columns_info": columns_info,
-                "db_path": os.path.abspath(os.path.dirname(__file__)),
-            }
-        )
-
-    except Exception as e:
-        return jsonify({"error": f"Error: {str(e)}"}), 500
 
 
 @app.route("/data", methods=["GET"])
@@ -79,6 +16,8 @@ def get_all_data():
     try:
         page = request.args.get("page", 1, type=int)
         per_page = request.args.get("per_page", 100, type=int)
+        sort_field = request.args.get("sort_field")
+        sort_direction = request.args.get("sort_direction", "asc")
 
         # Construir la consulta base
         query = "SELECT * FROM folios WHERE 1=1"
@@ -113,11 +52,9 @@ def get_all_data():
                 query += f" AND {column} = ?"
                 params.append(int(value))
 
-        # Filtros numéricos
-        for column in ["cantidadPedida", "cantidadVerificada", "existencia"]:
-            if request.args.get(column):
-                query += f" AND {column} = ?"
-                params.append(request.args.get(column))
+        # Agregar ordenamiento si se especifica
+        if sort_field and sort_field in text_columns + numeric_columns:
+            query += f" ORDER BY {sort_field} {'DESC' if sort_direction == 'desc' else 'ASC'}"
 
         # Obtener total de registros para la paginación
         conn = get_sqlite_connection()
@@ -174,11 +111,12 @@ def update_item(id):
         conn = get_sqlite_connection()
         cursor = conn.cursor()
 
-        # Actualizar usando el nombre correcto de la columna
+        # Actualizar incluyendo nombreVerificador
         cursor.execute(
             """
             UPDATE folios 
-            SET cantidadVerificada = ?
+            SET cantidadVerificada = ?,
+                nombreVerificador = ?
             WHERE id = ?
             """,
             (
@@ -187,6 +125,7 @@ def update_item(id):
                     if data.get("cantidadVerificada")
                     else None
                 ),
+                data.get("nombreVerificador"),
                 id,
             ),
         )
@@ -205,6 +144,7 @@ def update_item(id):
                 "data": {
                     "id": id,
                     "cantidadVerificada": data.get("cantidadVerificada"),
+                    "nombreVerificador": data.get("nombreVerificador"),
                 },
             }
         )
@@ -237,6 +177,176 @@ def sync_database():
 
         traceback.print_exc()
         return jsonify({"error": f"Error durante la sincronización: {str(e)}"}), 500
+
+
+@app.route("/localizaciones", methods=["GET"])
+def get_localizaciones():
+    try:
+        conn = get_sqlite_connection()
+        cursor = conn.cursor()
+
+        folio_pedido = request.args.get("folioPedido")
+
+        query = """
+            SELECT DISTINCT localizacion 
+            FROM folios 
+            WHERE localizacion IS NOT NULL 
+            AND localizacion != ''
+        """
+        params = []
+
+        # Si hay un folio pedido, filtrar por él
+        if folio_pedido:
+            query += " AND folioPedido LIKE ?"
+            params.append(f"%{folio_pedido}%")
+
+        query += " ORDER BY localizacion ASC"
+
+        cursor.execute(query, params)
+        localizaciones = [row[0] for row in cursor.fetchall()]
+
+        return jsonify({"status": "success", "data": localizaciones}), 200
+
+    except Exception as e:
+        return jsonify({"status": "error", "message": str(e)}), 500
+    finally:
+        if conn:
+            conn.close()
+
+
+@app.route("/clasificaciones", methods=["GET"])
+def get_clasificaciones():
+    try:
+        conn = get_sqlite_connection()
+        cursor = conn.cursor()
+
+        query = """
+            SELECT DISTINCT descripcion_clasificacion 
+            FROM folios 
+            WHERE descripcion_clasificacion IS NOT NULL 
+            AND descripcion_clasificacion != ''
+            ORDER BY descripcion_clasificacion
+        """
+
+        cursor.execute(query)
+        clasificaciones = [row[0] for row in cursor.fetchall()]
+
+        return jsonify({"status": "success", "data": clasificaciones}), 200
+
+    except Exception as e:
+        return jsonify({"status": "error", "message": str(e)}), 500
+    finally:
+        if conn:
+            conn.close()
+
+
+@app.route("/clasificaciones/<folio>", methods=["GET"])
+def get_clasificaciones_by_folio(folio):
+    conn = None
+    try:
+        conn = get_sqlite_connection()
+        cursor = conn.cursor()
+
+        # Primero, verificamos si el folio existe
+        check_query = "SELECT COUNT(*) FROM folios WHERE folioPedido = ?"
+        cursor.execute(check_query, (folio,))
+        if cursor.fetchone()[0] == 0:
+            return jsonify({"status": "success", "data": []}), 200
+
+        query = """
+            SELECT DISTINCT descripcion_clasificacion 
+            FROM folios 
+            WHERE folioPedido = ?
+            AND descripcion_clasificacion IS NOT NULL 
+            AND descripcion_clasificacion != ''
+            ORDER BY descripcion_clasificacion
+        """
+
+        cursor.execute(query, (folio,))
+        clasificaciones = [row[0] for row in cursor.fetchall()]
+
+        print(f"Folio consultado: {folio}")
+        print(f"Query ejecutado: {query}")
+        print(f"Clasificaciones encontradas: {clasificaciones}")
+
+        return jsonify({"status": "success", "data": clasificaciones}), 200
+
+    except Exception as e:
+        print(f"Error en get_clasificaciones_by_folio: {str(e)}")
+        import traceback
+
+        print(traceback.format_exc())
+        return (
+            jsonify(
+                {
+                    "status": "error",
+                    "message": str(e),
+                    "details": traceback.format_exc(),
+                }
+            ),
+            500,
+        )
+    finally:
+        if conn:
+            conn.close()
+
+
+@app.route("/generate-excel/<folio>", methods=["GET"])
+def generate_excel(folio):
+    try:
+        conn = get_sqlite_connection()
+        cursor = conn.cursor()
+
+        # Obtener los datos filtrados por folio
+        query = """
+            SELECT codigoRelacionado, cantidadVerificada 
+            FROM folios 
+            WHERE folioPedido = ? 
+            AND cantidadVerificada IS NOT NULL
+            AND cantidadVerificada > 0
+        """
+        cursor.execute(query, (folio,))
+        rows = cursor.fetchall()
+
+        if not rows:
+            return (
+                jsonify({"status": "error", "message": "No hay datos para exportar"}),
+                404,
+            )
+
+        # Crear el libro de Excel
+        wb = Workbook()
+        ws = wb.active
+        ws.title = "PRODUCTOS"
+
+        # Agregar encabezados
+        ws.append(["CodigoSubAlmacen", "CodigoRelacionado", "Piezas"])
+
+        # Agregar datos
+        for row in rows:
+            ws.append(["1", row[0], row[1]])
+
+        # Crear directorio para archivos temporales si no existe
+        if not os.path.exists("temp_excel"):
+            os.makedirs("temp_excel")
+
+        # Guardar el archivo
+        file_path = f"temp_excel/{folio}.xlsx"
+        wb.save(file_path)
+
+        # Enviar el archivo
+        return send_file(
+            file_path,
+            mimetype="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+            as_attachment=True,
+            download_name=f"{folio}.xlsx",
+        )
+
+    except Exception as e:
+        return jsonify({"status": "error", "message": str(e)}), 500
+    finally:
+        if conn:
+            conn.close()
 
 
 if __name__ == "__main__":

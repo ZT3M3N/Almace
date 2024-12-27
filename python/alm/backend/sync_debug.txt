@@ -36,3 +36,634 @@ Código=7506339390254
 2024-12-20 09:46:38,134 - INFO - 127.0.0.1 - - [20/Dec/2024 09:46:38] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
 2024-12-20 09:47:05,969 - INFO - 127.0.0.1 - - [20/Dec/2024 09:47:05] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
 2024-12-20 09:47:06,704 - INFO - 127.0.0.1 - - [20/Dec/2024 09:47:06] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-23 08:24:43,897 - INFO - Iniciando proceso de sincronización
+2024-12-23 08:24:54,326 - INFO - Se agregaron 18453 registros nuevos
+2024-12-23 08:24:54,327 - INFO - Ejemplo de registro insertado:
+ID=5124506
+Folio=PC0001010031617
+Código=7509546000350
+-------------------
+2024-12-23 08:24:54,327 - INFO - Ejemplo de registro insertado:
+ID=5124507
+Folio=PC0001010031617
+Código=7509546000985
+-------------------
+2024-12-23 08:24:54,328 - INFO - Ejemplo de registro insertado:
+ID=5124508
+Folio=PC0001010031617
+Código=7509546045320
+-------------------
+2024-12-23 08:24:54,328 - INFO - Ejemplo de registro insertado:
+ID=5124509
+Folio=PC0001010031617
+Código=7509546057521
+-------------------
+2024-12-23 08:24:54,328 - INFO - Ejemplo de registro insertado:
+ID=5124510
+Folio=PC0001010031617
+Código=7509546071558
+-------------------
+2024-12-23 08:24:54,338 - INFO - 127.0.0.1 - - [23/Dec/2024 08:24:54] "POST /sync HTTP/1.1" 200 -
+2024-12-23 08:24:55,958 - INFO - 127.0.0.1 - - [23/Dec/2024 08:24:55] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-23 08:27:00,668 - INFO - 127.0.0.1 - - [23/Dec/2024 08:27:00] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-23 08:27:02,175 - INFO - 127.0.0.1 - - [23/Dec/2024 08:27:02] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-23 08:27:41,095 - INFO - 127.0.0.1 - - [23/Dec/2024 08:27:41] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-23 08:27:43,500 - INFO - 127.0.0.1 - - [23/Dec/2024 08:27:43] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-23 08:27:50,500 - INFO - 127.0.0.1 - - [23/Dec/2024 08:27:50] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-23 08:27:51,699 - INFO - 127.0.0.1 - - [23/Dec/2024 08:27:51] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-23 08:35:43,526 - INFO - 127.0.0.1 - - [23/Dec/2024 08:35:43] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-23 08:35:45,012 - INFO - 127.0.0.1 - - [23/Dec/2024 08:35:45] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-23 08:36:00,080 - INFO - 127.0.0.1 - - [23/Dec/2024 08:36:00] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-23 08:36:01,491 - INFO - 127.0.0.1 - - [23/Dec/2024 08:36:01] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-23 08:43:38,196 - INFO - 127.0.0.1 - - [23/Dec/2024 08:43:38] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-23 08:43:39,711 - INFO - 127.0.0.1 - - [23/Dec/2024 08:43:39] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-23 08:49:11,136 - INFO - 127.0.0.1 - - [23/Dec/2024 08:49:11] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-23 08:49:12,667 - INFO - 127.0.0.1 - - [23/Dec/2024 08:49:12] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-23 09:03:07,560 - INFO - 127.0.0.1 - - [23/Dec/2024 09:03:07] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-23 09:03:08,819 - INFO - 127.0.0.1 - - [23/Dec/2024 09:03:08] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-23 09:11:42,259 - INFO - 127.0.0.1 - - [23/Dec/2024 09:11:42] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-23 09:11:43,521 - INFO - 127.0.0.1 - - [23/Dec/2024 09:11:43] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-23 09:13:19,704 - INFO - 127.0.0.1 - - [23/Dec/2024 09:13:19] "GET /data?page=1&per_page=100&cantidadVerificada=5 HTTP/1.1" 200 -
+2024-12-23 09:13:25,365 - INFO - 127.0.0.1 - - [23/Dec/2024 09:13:25] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-23 09:13:37,377 - INFO - 127.0.0.1 - - [23/Dec/2024 09:13:37] "OPTIONS /data/1 HTTP/1.1" 200 -
+2024-12-23 09:13:37,968 - INFO - 127.0.0.1 - - [23/Dec/2024 09:13:37] "PUT /data/1 HTTP/1.1" 200 -
+2024-12-23 09:14:08,216 - INFO - 127.0.0.1 - - [23/Dec/2024 09:14:08] "OPTIONS /data/1 HTTP/1.1" 200 -
+2024-12-23 09:14:08,451 - INFO - 127.0.0.1 - - [23/Dec/2024 09:14:08] "PUT /data/1 HTTP/1.1" 200 -
+2024-12-23 09:14:25,435 - INFO - 127.0.0.1 - - [23/Dec/2024 09:14:25] "OPTIONS /data/1 HTTP/1.1" 200 -
+2024-12-23 09:14:25,669 - INFO - 127.0.0.1 - - [23/Dec/2024 09:14:25] "PUT /data/1 HTTP/1.1" 200 -
+2024-12-23 09:19:29,517 - INFO - 127.0.0.1 - - [23/Dec/2024 09:19:29] "GET /data?page=1&per_page=100&folioPedido=P0 HTTP/1.1" 200 -
+2024-12-23 09:19:46,763 - INFO - 127.0.0.1 - - [23/Dec/2024 09:19:46] "GET /data?page=1&per_page=100&folioPedido=P027 HTTP/1.1" 200 -
+2024-12-23 09:19:59,362 - INFO - 127.0.0.1 - - [23/Dec/2024 09:19:59] "GET /data?page=1&per_page=100&folioPedido=P027000000 HTTP/1.1" 200 -
+2024-12-23 09:20:06,088 - INFO - 127.0.0.1 - - [23/Dec/2024 09:20:06] "GET /data?page=1&per_page=100&folioPedido=P027000000101 HTTP/1.1" 200 -
+2024-12-23 09:20:18,188 - INFO - 127.0.0.1 - - [23/Dec/2024 09:20:18] "GET /data?page=1&per_page=100&folioPedido=P0270000000101 HTTP/1.1" 200 -
+2024-12-23 09:20:27,602 - INFO - 127.0.0.1 - - [23/Dec/2024 09:20:27] "GET /data?page=1&per_page=100&folioPedido=P00270000000101 HTTP/1.1" 200 -
+2024-12-23 09:21:34,823 - INFO - 127.0.0.1 - - [23/Dec/2024 09:21:34] "GET /data?page=1&per_page=100&folioPedido=P00270000000101&descripcion_clasificacion=CLASID HTTP/1.1" 200 -
+2024-12-23 09:21:45,124 - INFO - 127.0.0.1 - - [23/Dec/2024 09:21:45] "GET /data?page=1&per_page=100&folioPedido=P00270000000101&descripcion_clasificacion=1 HTTP/1.1" 200 -
+2024-12-23 09:22:15,008 - INFO - 127.0.0.1 - - [23/Dec/2024 09:22:15] "GET /data?page=1&per_page=100&folioPedido=P00270000000101&descripcion_clasificacion=CLASIFICASION+1 HTTP/1.1" 200 -
+2024-12-23 09:34:47,814 - INFO - 127.0.0.1 - - [23/Dec/2024 09:34:47] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-23 09:35:06,239 - INFO - 127.0.0.1 - - [23/Dec/2024 09:35:06] "GET /data?page=1&per_page=100&folioPedido=P HTTP/1.1" 200 -
+2024-12-23 09:35:12,472 - INFO - 127.0.0.1 - - [23/Dec/2024 09:35:12] "GET /data?page=1&per_page=100&folioPedido=P00 HTTP/1.1" 200 -
+2024-12-23 09:35:20,500 - INFO - 127.0.0.1 - - [23/Dec/2024 09:35:20] "GET /data?page=1&per_page=100&folioPedido=P0027 HTTP/1.1" 200 -
+2024-12-23 09:35:32,608 - INFO - 127.0.0.1 - - [23/Dec/2024 09:35:32] "GET /data?page=1&per_page=100&folioPedido=P0027000000 HTTP/1.1" 200 -
+2024-12-23 09:35:40,865 - INFO - 127.0.0.1 - - [23/Dec/2024 09:35:40] "GET /data?page=1&per_page=100&folioPedido=P0027000000101 HTTP/1.1" 200 -
+2024-12-23 09:36:14,451 - INFO - 127.0.0.1 - - [23/Dec/2024 09:36:14] "GET /data?page=1&per_page=100&folioPedido=P00270000000101 HTTP/1.1" 200 -
+2024-12-23 09:37:06,125 - INFO - 127.0.0.1 - - [23/Dec/2024 09:37:06] "GET /data?page=1&per_page=100&folioPedido=P00270000000101&descripcion_clasificacion=2 HTTP/1.1" 200 -
+2024-12-23 09:37:28,232 - INFO - 127.0.0.1 - - [23/Dec/2024 09:37:28] "OPTIONS /data/2170228 HTTP/1.1" 200 -
+2024-12-23 09:37:29,194 - INFO - 127.0.0.1 - - [23/Dec/2024 09:37:29] "PUT /data/2170228 HTTP/1.1" 200 -
+2024-12-23 09:40:51,028 - INFO - 127.0.0.1 - - [23/Dec/2024 09:40:51] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-23 09:43:30,071 - INFO - 127.0.0.1 - - [23/Dec/2024 09:43:30] "GET /data?page=1&per_page=100&folioPedido=P00270000000101&codigoRelacionado=7501070648626&descripcion_clasificacion=CLASIFICASION+1 HTTP/1.1" 200 -
+2024-12-23 09:43:53,015 - INFO - 127.0.0.1 - - [23/Dec/2024 09:43:53] "GET /data?page=1&per_page=100&folioPedido=P00270000000101&codigoRelacionado=75010648626&descripcion_clasificacion=CLASIFICASION+1 HTTP/1.1" 200 -
+2024-12-23 09:43:59,239 - INFO - 127.0.0.1 - - [23/Dec/2024 09:43:59] "GET /data?page=1&per_page=100&folioPedido=P00270000000101&descripcion_clasificacion=CLASIFICASION+1 HTTP/1.1" 200 -
+2024-12-23 09:45:01,878 - INFO - 127.0.0.1 - - [23/Dec/2024 09:45:01] "GET /data?page=1&per_page=100&folioPedido=P00270000000101&codigoRelacionado=785118753597&descripcion_clasificacion=CLASIFICASION+1 HTTP/1.1" 200 -
+2024-12-23 09:45:36,976 - INFO - 127.0.0.1 - - [23/Dec/2024 09:45:36] "GET /data?page=1&per_page=100&folioPedido=P00270000000101&descripcion_clasificacion=CLASIFICASION+1 HTTP/1.1" 200 -
+2024-12-23 09:46:04,741 - INFO - 127.0.0.1 - - [23/Dec/2024 09:46:04] "GET /data?page=1&per_page=100&folioPedido=P00270000000101&descripcion_producto=LESACLOR&descripcion_clasificacion=CLASIFICASION+1 HTTP/1.1" 200 -
+2024-12-23 09:47:13,533 - INFO - 127.0.0.1 - - [23/Dec/2024 09:47:13] "GET /data?page=1&per_page=100&folioPedido=P00270000000101&descripcion_clasificacion=CLASIFICASION+1 HTTP/1.1" 200 -
+2024-12-23 09:47:29,637 - INFO - 127.0.0.1 - - [23/Dec/2024 09:47:29] "GET /data?page=1&per_page=100&folioPedido=P00270000000101&descripcion_clasificacion=1 HTTP/1.1" 200 -
+2024-12-23 09:47:35,259 - INFO - 127.0.0.1 - - [23/Dec/2024 09:47:35] "GET /data?page=1&per_page=100&folioPedido=P00270000000101 HTTP/1.1" 200 -
+2024-12-23 09:47:43,599 - INFO - 127.0.0.1 - - [23/Dec/2024 09:47:43] "GET /data?page=1&per_page=100&folioPedido=P00270000000101&codigoRelacionado=785118753597 HTTP/1.1" 200 -
+2024-12-23 09:57:52,316 - INFO - 127.0.0.1 - - [23/Dec/2024 09:57:52] "GET /data?page=1&per_page=100&folioPedido=P00270000000101 HTTP/1.1" 200 -
+2024-12-23 09:57:55,671 - INFO - 127.0.0.1 - - [23/Dec/2024 09:57:55] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-23 09:58:13,730 - INFO - 127.0.0.1 - - [23/Dec/2024 09:58:13] "GET /data?page=1&per_page=100&folioPedido=PC000 HTTP/1.1" 200 -
+2024-12-23 09:58:28,618 - INFO - 127.0.0.1 - - [23/Dec/2024 09:58:28] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-23 09:58:49,870 - INFO - 127.0.0.1 - - [23/Dec/2024 09:58:49] "GET /data?page=1&per_page=100&folioPedido=PC HTTP/1.1" 200 -
+2024-12-23 09:58:57,593 - INFO - 127.0.0.1 - - [23/Dec/2024 09:58:57] "GET /data?page=1&per_page=100&folioPedido=PC000101 HTTP/1.1" 200 -
+2024-12-23 09:59:06,166 - INFO - 127.0.0.1 - - [23/Dec/2024 09:59:06] "GET /data?page=1&per_page=100&folioPedido=PC00010100 HTTP/1.1" 200 -
+2024-12-23 09:59:07,153 - INFO - 127.0.0.1 - - [23/Dec/2024 09:59:07] "GET /data?page=1&per_page=100&folioPedido=PC000101003 HTTP/1.1" 200 -
+2024-12-23 09:59:15,072 - INFO - 127.0.0.1 - - [23/Dec/2024 09:59:15] "GET /data?page=1&per_page=100&folioPedido=PC0001010031749 HTTP/1.1" 200 -
+2024-12-23 09:59:33,162 - INFO - 127.0.0.1 - - [23/Dec/2024 09:59:33] "GET /data?page=1&per_page=100&folioPedido=PC0001010031749&descripcion_presentacion=CLASIFICASION+1 HTTP/1.1" 200 -
+2024-12-23 09:59:48,509 - INFO - 127.0.0.1 - - [23/Dec/2024 09:59:48] "GET /data?page=1&per_page=100&folioPedido=PC0001010031749&descripcion_presentacion=CLASIFICASION HTTP/1.1" 200 -
+2024-12-23 09:59:56,748 - INFO - 127.0.0.1 - - [23/Dec/2024 09:59:56] "GET /data?page=1&per_page=100&folioPedido=PC0001010031749 HTTP/1.1" 200 -
+2024-12-23 10:00:06,361 - INFO - 127.0.0.1 - - [23/Dec/2024 10:00:06] "GET /data?page=1&per_page=100&folioPedido=PC0001010031749&descripcion_presentacion=1 HTTP/1.1" 200 -
+2024-12-23 10:00:13,230 - INFO - 127.0.0.1 - - [23/Dec/2024 10:00:13] "GET /data?page=1&per_page=100&folioPedido=PC0001010031749 HTTP/1.1" 200 -
+2024-12-23 10:00:26,205 - INFO - 127.0.0.1 - - [23/Dec/2024 10:00:26] "GET /data?page=1&per_page=100&folioPedido=PC0001010031749&descripcion_presentacion=CLASIFICACION+2 HTTP/1.1" 200 -
+2024-12-23 10:00:38,983 - INFO - 127.0.0.1 - - [23/Dec/2024 10:00:38] "GET /data?page=1&per_page=100&folioPedido=PC0001010031749 HTTP/1.1" 200 -
+2024-12-23 10:00:47,467 - INFO - 127.0.0.1 - - [23/Dec/2024 10:00:47] "GET /data?page=1&per_page=100&folioPedido=PC0001010031749&descripcion_presentacion=CLASIF HTTP/1.1" 200 -
+2024-12-23 10:02:03,680 - INFO - 127.0.0.1 - - [23/Dec/2024 10:02:03] "GET /data?page=1&per_page=100&folioPedido=PC0001010031749 HTTP/1.1" 200 -
+2024-12-23 10:02:16,871 - INFO - 127.0.0.1 - - [23/Dec/2024 10:02:16] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-23 10:02:18,160 - INFO - 127.0.0.1 - - [23/Dec/2024 10:02:18] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-23 10:02:23,994 - INFO - 127.0.0.1 - - [23/Dec/2024 10:02:23] "GET /data?page=1&per_page=100&folioPedido=PC0001010031749 HTTP/1.1" 200 -
+2024-12-23 10:02:34,316 - INFO - 127.0.0.1 - - [23/Dec/2024 10:02:34] "GET /data?page=1&per_page=100&folioPedido=PC0001010031749&descripcion_clasificacion=CLASI HTTP/1.1" 200 -
+2024-12-23 10:02:44,062 - INFO - 127.0.0.1 - - [23/Dec/2024 10:02:44] "GET /data?page=1&per_page=100&folioPedido=PC0001010031749&descripcion_clasificacion=CLASIFICACION+1 HTTP/1.1" 200 -
+2024-12-23 10:02:59,144 - INFO - 127.0.0.1 - - [23/Dec/2024 10:02:59] "GET /data?page=1&per_page=100&folioPedido=PC0001010031749&descripcion_clasificacion=CLASIFICACION HTTP/1.1" 200 -
+2024-12-23 10:03:13,854 - INFO - 127.0.0.1 - - [23/Dec/2024 10:03:13] "GET /data?page=1&per_page=100&folioPedido=PC0001010031749&descripcion_clasificacion=CLASICACION HTTP/1.1" 200 -
+2024-12-23 10:03:19,752 - INFO - 127.0.0.1 - - [23/Dec/2024 10:03:19] "GET /data?page=1&per_page=100&folioPedido=PC0001010031749 HTTP/1.1" 200 -
+2024-12-23 10:03:29,928 - INFO - 127.0.0.1 - - [23/Dec/2024 10:03:29] "GET /data?page=1&per_page=100&folioPedido=PC0001010031749&descripcion_clasificacion=CLASIFICASION+1 HTTP/1.1" 200 -
+2024-12-23 10:04:42,119 - INFO - 127.0.0.1 - - [23/Dec/2024 10:04:42] "GET /data?page=1&per_page=100&folioPedido=PC0001010031749&descripcion_clasificacion=CLASIFICACION+1 HTTP/1.1" 200 -
+2024-12-23 10:04:57,004 - INFO - 127.0.0.1 - - [23/Dec/2024 10:04:57] "GET /data?page=1&per_page=100&folioPedido=PC0001010031749&descripcion_clasificacion=CLASIFICASION+1 HTTP/1.1" 200 -
+2024-12-23 10:09:15,407 - INFO - 127.0.0.1 - - [23/Dec/2024 10:09:15] "GET /data?page=1&per_page=100&folioPedido=PC0001010031749&codigoRelacionado=781584367412&descripcion_clasificacion=CLASIFICASION+1 HTTP/1.1" 200 -
+2024-12-23 10:09:25,020 - INFO - 127.0.0.1 - - [23/Dec/2024 10:09:25] "GET /data?page=1&per_page=100&folioPedido=PC0001010031749&codigoRelacionado=781584367412&cantidadVerificada=1&descripcion_clasificacion=CLASIFICASION+1 HTTP/1.1" 200 -
+2024-12-23 10:09:32,390 - INFO - 127.0.0.1 - - [23/Dec/2024 10:09:32] "GET /data?page=1&per_page=100&folioPedido=PC0001010031749&codigoRelacionado=781584367412&descripcion_clasificacion=CLASIFICASION+1 HTTP/1.1" 200 -
+2024-12-23 10:09:39,312 - INFO - 127.0.0.1 - - [23/Dec/2024 10:09:39] "OPTIONS /data/5142917 HTTP/1.1" 200 -
+2024-12-23 10:09:40,120 - INFO - 127.0.0.1 - - [23/Dec/2024 10:09:40] "PUT /data/5142917 HTTP/1.1" 200 -
+2024-12-23 10:13:14,127 - INFO - 127.0.0.1 - - [23/Dec/2024 10:13:14] "GET /data?page=1&per_page=100&folioPedido=PC0001010031749&descripcion_clasificacion=CLASIFICASION+1 HTTP/1.1" 200 -
+2024-12-23 10:13:23,079 - INFO - 127.0.0.1 - - [23/Dec/2024 10:13:23] "GET /data?page=1&per_page=100&folioPedido=PC0001010031749&codigoRelacionado=7502001165328&descripcion_clasificacion=CLASIFICASION+1 HTTP/1.1" 200 -
+2024-12-23 10:13:38,679 - INFO - 127.0.0.1 - - [23/Dec/2024 10:13:38] "OPTIONS /data/5142747 HTTP/1.1" 200 -
+2024-12-23 10:13:39,395 - INFO - 127.0.0.1 - - [23/Dec/2024 10:13:39] "PUT /data/5142747 HTTP/1.1" 200 -
+2024-12-23 13:55:20,345 - INFO - Iniciando proceso de sincronización
+2024-12-23 13:55:27,190 - INFO - Se agregaron 1010 registros nuevos
+2024-12-23 13:55:27,191 - INFO - Ejemplo de registro insertado:
+ID=5142959
+Folio=PC0001010031743
+Código=785120755046
+-------------------
+2024-12-23 13:55:27,191 - INFO - Ejemplo de registro insertado:
+ID=5142960
+Folio=PC0001010031743
+Código=785120755466
+-------------------
+2024-12-23 13:55:27,191 - INFO - Ejemplo de registro insertado:
+ID=5142961
+Folio=PC0001010031743
+Código=7891024123164
+-------------------
+2024-12-23 13:55:27,191 - INFO - Ejemplo de registro insertado:
+ID=5142962
+Folio=PC0001010031743
+Código=7891024183182
+-------------------
+2024-12-23 13:55:27,191 - INFO - Ejemplo de registro insertado:
+ID=5142963
+Folio=PC0001010031743
+Código=7891317019532
+-------------------
+2024-12-23 13:55:27,192 - INFO - 127.0.0.1 - - [23/Dec/2024 13:55:27] "POST /sync HTTP/1.1" 200 -
+2024-12-23 13:55:27,825 - INFO - 127.0.0.1 - - [23/Dec/2024 13:55:27] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-23 13:55:33,455 - INFO - 127.0.0.1 - - [23/Dec/2024 13:55:33] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-23 13:55:34,211 - INFO - 127.0.0.1 - - [23/Dec/2024 13:55:34] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-23 14:24:02,682 - INFO - 127.0.0.1 - - [23/Dec/2024 14:24:02] "OPTIONS /data/1 HTTP/1.1" 200 -
+2024-12-23 14:24:02,952 - INFO - 127.0.0.1 - - [23/Dec/2024 14:24:02] "PUT /data/1 HTTP/1.1" 200 -
+2024-12-23 14:24:07,857 - INFO - 127.0.0.1 - - [23/Dec/2024 14:24:07] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-23 14:24:08,807 - INFO - 127.0.0.1 - - [23/Dec/2024 14:24:08] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-23 14:31:12,813 - INFO - 127.0.0.1 - - [23/Dec/2024 14:31:12] "OPTIONS /data/1 HTTP/1.1" 200 -
+2024-12-23 14:31:13,097 - INFO - 127.0.0.1 - - [23/Dec/2024 14:31:13] "PUT /data/1 HTTP/1.1" 200 -
+2024-12-23 14:31:40,807 - INFO - 127.0.0.1 - - [23/Dec/2024 14:31:40] "OPTIONS /data/1 HTTP/1.1" 200 -
+2024-12-23 14:31:41,135 - INFO - 127.0.0.1 - - [23/Dec/2024 14:31:41] "PUT /data/1 HTTP/1.1" 200 -
+2024-12-23 14:31:44,966 - INFO - 127.0.0.1 - - [23/Dec/2024 14:31:44] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-23 14:31:45,920 - INFO - 127.0.0.1 - - [23/Dec/2024 14:31:45] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-23 14:31:53,445 - INFO - 127.0.0.1 - - [23/Dec/2024 14:31:53] "OPTIONS /data/1 HTTP/1.1" 200 -
+2024-12-23 14:31:53,716 - INFO - 127.0.0.1 - - [23/Dec/2024 14:31:53] "PUT /data/1 HTTP/1.1" 200 -
+2024-12-23 14:31:56,443 - INFO - 127.0.0.1 - - [23/Dec/2024 14:31:56] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-23 14:31:57,410 - INFO - 127.0.0.1 - - [23/Dec/2024 14:31:57] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-23 14:32:08,586 - INFO - 127.0.0.1 - - [23/Dec/2024 14:32:08] "OPTIONS /data/1 HTTP/1.1" 200 -
+2024-12-23 14:32:08,855 - INFO - 127.0.0.1 - - [23/Dec/2024 14:32:08] "PUT /data/1 HTTP/1.1" 200 -
+2024-12-23 14:32:12,961 - INFO - 127.0.0.1 - - [23/Dec/2024 14:32:12] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-23 14:32:13,914 - INFO - 127.0.0.1 - - [23/Dec/2024 14:32:13] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-23 14:34:00,248 - INFO - 127.0.0.1 - - [23/Dec/2024 14:34:00] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-23 14:35:11,185 - INFO - 127.0.0.1 - - [23/Dec/2024 14:35:11] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-23 14:48:41,185 - INFO - 127.0.0.1 - - [23/Dec/2024 14:48:41] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-23 14:54:05,242 - INFO - 127.0.0.1 - - [23/Dec/2024 14:54:05] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-23 14:55:50,246 - INFO -  * Detected change in 'C:\\Users\\stejo\\OneDrive\\Escritorio\\Almacen\\python\\alm\\backend\\app.py', reloading
+2024-12-27 09:31:45,348 - INFO - Iniciando proceso de sincronización
+2024-12-27 09:31:48,265 - INFO - 127.0.0.1 - - [27/Dec/2024 09:31:48] "GET /localizaciones HTTP/1.1" 200 -
+2024-12-27 09:32:09,544 - INFO - Se agregaron 9868 registros nuevos
+2024-12-27 09:32:09,545 - INFO - Ejemplo de registro insertado:
+ID=5143969
+Folio=PC0001010031672
+Código=7501050610018
+-------------------
+2024-12-27 09:32:09,545 - INFO - Ejemplo de registro insertado:
+ID=5143970
+Folio=PC0001010031672
+Código=7501050699990
+-------------------
+2024-12-27 09:32:09,545 - INFO - Ejemplo de registro insertado:
+ID=5143971
+Folio=PC0001010031672
+Código=7501054530718
+-------------------
+2024-12-27 09:32:09,546 - INFO - Ejemplo de registro insertado:
+ID=5143972
+Folio=PC0001010031672
+Código=7501054549819
+-------------------
+2024-12-27 09:32:09,546 - INFO - Ejemplo de registro insertado:
+ID=5143973
+Folio=PC0001010031672
+Código=7501056330255
+-------------------
+2024-12-27 09:32:09,549 - INFO - 127.0.0.1 - - [27/Dec/2024 09:32:09] "POST /sync HTTP/1.1" 200 -
+2024-12-27 09:32:10,448 - INFO - 127.0.0.1 - - [27/Dec/2024 09:32:10] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-27 09:34:09,938 - INFO - 127.0.0.1 - - [27/Dec/2024 09:34:09] "GET /clasificaciones/P HTTP/1.1" 200 -
+2024-12-27 09:34:10,354 - INFO - 127.0.0.1 - - [27/Dec/2024 09:34:10] "GET /clasificaciones/P0 HTTP/1.1" 200 -
+2024-12-27 09:34:10,572 - INFO - 127.0.0.1 - - [27/Dec/2024 09:34:10] "GET /clasificaciones/P00 HTTP/1.1" 200 -
+2024-12-27 09:34:12,236 - INFO - 127.0.0.1 - - [27/Dec/2024 09:34:12] "GET /clasificaciones/P001 HTTP/1.1" 200 -
+2024-12-27 09:34:12,754 - INFO - 127.0.0.1 - - [27/Dec/2024 09:34:12] "GET /clasificaciones/P0013 HTTP/1.1" 200 -
+2024-12-27 09:34:13,546 - INFO - 127.0.0.1 - - [27/Dec/2024 09:34:13] "GET /localizaciones?folioPedido=P0 HTTP/1.1" 200 -
+2024-12-27 09:34:13,960 - INFO - 127.0.0.1 - - [27/Dec/2024 09:34:13] "GET /localizaciones?folioPedido=P00 HTTP/1.1" 200 -
+2024-12-27 09:34:14,019 - INFO - 127.0.0.1 - - [27/Dec/2024 09:34:14] "GET /localizaciones?folioPedido=P0013 HTTP/1.1" 200 -
+2024-12-27 09:34:14,206 - INFO - 127.0.0.1 - - [27/Dec/2024 09:34:14] "GET /clasificaciones/P00130 HTTP/1.1" 200 -
+2024-12-27 09:34:14,513 - INFO - 127.0.0.1 - - [27/Dec/2024 09:34:14] "GET /localizaciones?folioPedido=P001 HTTP/1.1" 200 -
+2024-12-27 09:34:14,650 - INFO - 127.0.0.1 - - [27/Dec/2024 09:34:14] "GET /clasificaciones/P001300 HTTP/1.1" 200 -
+2024-12-27 09:34:14,919 - INFO - 127.0.0.1 - - [27/Dec/2024 09:34:14] "GET /clasificaciones/P0013000 HTTP/1.1" 200 -
+2024-12-27 09:34:15,017 - INFO - 127.0.0.1 - - [27/Dec/2024 09:34:15] "GET /localizaciones?folioPedido=P HTTP/1.1" 200 -
+2024-12-27 09:34:15,169 - INFO - 127.0.0.1 - - [27/Dec/2024 09:34:15] "GET /localizaciones?folioPedido=P00130 HTTP/1.1" 200 -
+2024-12-27 09:34:15,448 - INFO - 127.0.0.1 - - [27/Dec/2024 09:34:15] "GET /localizaciones?folioPedido=P001300 HTTP/1.1" 200 -
+2024-12-27 09:34:15,807 - INFO - 127.0.0.1 - - [27/Dec/2024 09:34:15] "GET /localizaciones?folioPedido=P0013000 HTTP/1.1" 200 -
+2024-12-27 09:34:16,411 - INFO - 127.0.0.1 - - [27/Dec/2024 09:34:16] "GET /clasificaciones/P00130000 HTTP/1.1" 200 -
+2024-12-27 09:34:17,240 - INFO - 127.0.0.1 - - [27/Dec/2024 09:34:17] "GET /localizaciones?folioPedido=P00130000 HTTP/1.1" 200 -
+2024-12-27 09:34:17,857 - INFO - 127.0.0.1 - - [27/Dec/2024 09:34:17] "GET /clasificaciones/P001300000 HTTP/1.1" 200 -
+2024-12-27 09:34:18,291 - INFO - 127.0.0.1 - - [27/Dec/2024 09:34:18] "GET /localizaciones?folioPedido=P0013 HTTP/1.1" 200 -
+2024-12-27 09:34:18,560 - INFO - 127.0.0.1 - - [27/Dec/2024 09:34:18] "GET /localizaciones?folioPedido=P0 HTTP/1.1" 200 -
+2024-12-27 09:34:18,896 - INFO - 127.0.0.1 - - [27/Dec/2024 09:34:18] "GET /localizaciones?folioPedido=P001300000 HTTP/1.1" 200 -
+2024-12-27 09:34:19,818 - INFO - 127.0.0.1 - - [27/Dec/2024 09:34:19] "GET /localizaciones?folioPedido=P001 HTTP/1.1" 200 -
+2024-12-27 09:34:19,818 - INFO - 127.0.0.1 - - [27/Dec/2024 09:34:19] "GET /localizaciones?folioPedido=P00 HTTP/1.1" 200 -
+2024-12-27 09:34:20,523 - INFO - 127.0.0.1 - - [27/Dec/2024 09:34:20] "GET /clasificaciones/P0013000000 HTTP/1.1" 200 -
+2024-12-27 09:34:20,561 - INFO - 127.0.0.1 - - [27/Dec/2024 09:34:20] "GET /localizaciones?folioPedido=P00130 HTTP/1.1" 200 -
+2024-12-27 09:34:20,742 - INFO - 127.0.0.1 - - [27/Dec/2024 09:34:20] "GET /localizaciones?folioPedido=P001300 HTTP/1.1" 200 -
+2024-12-27 09:34:20,914 - INFO - 127.0.0.1 - - [27/Dec/2024 09:34:20] "GET /localizaciones?folioPedido=P0013000 HTTP/1.1" 200 -
+2024-12-27 09:34:21,197 - INFO - 127.0.0.1 - - [27/Dec/2024 09:34:21] "GET /localizaciones?folioPedido=P0013000000 HTTP/1.1" 200 -
+2024-12-27 09:34:21,233 - INFO - 127.0.0.1 - - [27/Dec/2024 09:34:21] "GET /localizaciones?folioPedido=P00130000 HTTP/1.1" 200 -
+2024-12-27 09:34:21,962 - INFO - 127.0.0.1 - - [27/Dec/2024 09:34:21] "GET /clasificaciones/P00130000002 HTTP/1.1" 200 -
+2024-12-27 09:34:22,303 - INFO - 127.0.0.1 - - [27/Dec/2024 09:34:22] "GET /localizaciones?folioPedido=P00130000002 HTTP/1.1" 200 -
+2024-12-27 09:34:22,970 - INFO - 127.0.0.1 - - [27/Dec/2024 09:34:22] "GET /localizaciones?folioPedido=P HTTP/1.1" 200 -
+2024-12-27 09:34:23,627 - INFO - 127.0.0.1 - - [27/Dec/2024 09:34:23] "GET /clasificaciones/P001300000024 HTTP/1.1" 200 -
+2024-12-27 09:34:24,448 - INFO - 127.0.0.1 - - [27/Dec/2024 09:34:24] "GET /localizaciones?folioPedido=P001300000024 HTTP/1.1" 200 -
+2024-12-27 09:34:24,695 - INFO - 127.0.0.1 - - [27/Dec/2024 09:34:24] "GET /clasificaciones/P0013000000247 HTTP/1.1" 200 -
+2024-12-27 09:34:24,856 - INFO - 127.0.0.1 - - [27/Dec/2024 09:34:24] "GET /clasificaciones/P00130000002476 HTTP/1.1" 200 -
+2024-12-27 09:34:25,273 - INFO - 127.0.0.1 - - [27/Dec/2024 09:34:25] "GET /localizaciones?folioPedido=P00130000002476 HTTP/1.1" 200 -
+2024-12-27 09:34:25,291 - INFO - 127.0.0.1 - - [27/Dec/2024 09:34:25] "GET /localizaciones?folioPedido=P0013000000247 HTTP/1.1" 200 -
+2024-12-27 09:34:28,458 - INFO - 127.0.0.1 - - [27/Dec/2024 09:34:28] "GET /localizaciones?folioPedido=P001300000 HTTP/1.1" 200 -
+2024-12-27 09:34:30,882 - INFO - 127.0.0.1 - - [27/Dec/2024 09:34:30] "GET /data?page=1&per_page=100&folioPedido=P00130000002476 HTTP/1.1" 200 -
+2024-12-27 09:34:40,257 - INFO - 127.0.0.1 - - [27/Dec/2024 09:34:40] "GET /localizaciones?folioPedido=P0013000000 HTTP/1.1" 200 -
+2024-12-27 09:34:42,453 - INFO - 127.0.0.1 - - [27/Dec/2024 09:34:42] "GET /localizaciones?folioPedido=P00130000002 HTTP/1.1" 200 -
+2024-12-27 09:34:43,788 - INFO - 127.0.0.1 - - [27/Dec/2024 09:34:43] "GET /localizaciones?folioPedido=P001300000024 HTTP/1.1" 200 -
+2024-12-27 09:34:44,561 - INFO - 127.0.0.1 - - [27/Dec/2024 09:34:44] "GET /localizaciones?folioPedido=P0013000000247 HTTP/1.1" 200 -
+2024-12-27 09:34:44,888 - INFO - 127.0.0.1 - - [27/Dec/2024 09:34:44] "GET /localizaciones?folioPedido=P00130000002476 HTTP/1.1" 200 -
+2024-12-27 09:35:33,285 - INFO - 127.0.0.1 - - [27/Dec/2024 09:35:33] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-27 09:35:36,142 - INFO - 127.0.0.1 - - [27/Dec/2024 09:35:36] "GET /localizaciones HTTP/1.1" 200 -
+2024-12-27 09:35:54,688 - INFO - 127.0.0.1 - - [27/Dec/2024 09:35:54] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-27 09:35:54,706 - INFO - 127.0.0.1 - - [27/Dec/2024 09:35:54] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-27 09:35:57,732 - INFO - 127.0.0.1 - - [27/Dec/2024 09:35:57] "GET /localizaciones HTTP/1.1" 200 -
+2024-12-27 09:36:14,204 - INFO - 127.0.0.1 - - [27/Dec/2024 09:36:14] "GET /localizaciones HTTP/1.1" 200 -
+2024-12-27 09:36:17,959 - INFO - 127.0.0.1 - - [27/Dec/2024 09:36:17] "GET /clasificaciones/P HTTP/1.1" 200 -
+2024-12-27 09:36:19,097 - INFO - 127.0.0.1 - - [27/Dec/2024 09:36:19] "GET /clasificaciones/P0 HTTP/1.1" 200 -
+2024-12-27 09:36:19,775 - INFO - 127.0.0.1 - - [27/Dec/2024 09:36:19] "GET /clasificaciones/P00 HTTP/1.1" 200 -
+2024-12-27 09:36:21,480 - INFO - 127.0.0.1 - - [27/Dec/2024 09:36:21] "GET /clasificaciones/P001 HTTP/1.1" 200 -
+2024-12-27 09:36:21,756 - INFO - 127.0.0.1 - - [27/Dec/2024 09:36:21] "GET /localizaciones?folioPedido=P HTTP/1.1" 200 -
+2024-12-27 09:36:21,788 - INFO - 127.0.0.1 - - [27/Dec/2024 09:36:21] "GET /localizaciones?folioPedido=P0 HTTP/1.1" 200 -
+2024-12-27 09:36:22,240 - INFO - 127.0.0.1 - - [27/Dec/2024 09:36:22] "GET /localizaciones?folioPedido=P00 HTTP/1.1" 200 -
+2024-12-27 09:36:22,581 - INFO - 127.0.0.1 - - [27/Dec/2024 09:36:22] "GET /localizaciones?folioPedido=P001 HTTP/1.1" 200 -
+2024-12-27 09:36:22,642 - INFO - 127.0.0.1 - - [27/Dec/2024 09:36:22] "GET /clasificaciones/P0013 HTTP/1.1" 200 -
+2024-12-27 09:36:22,935 - INFO - 127.0.0.1 - - [27/Dec/2024 09:36:22] "GET /localizaciones?folioPedido=P0013 HTTP/1.1" 200 -
+2024-12-27 09:36:23,570 - INFO - 127.0.0.1 - - [27/Dec/2024 09:36:23] "GET /clasificaciones/P00130 HTTP/1.1" 200 -
+2024-12-27 09:36:23,897 - INFO - 127.0.0.1 - - [27/Dec/2024 09:36:23] "GET /localizaciones?folioPedido=P00130 HTTP/1.1" 200 -
+2024-12-27 09:36:24,293 - INFO - 127.0.0.1 - - [27/Dec/2024 09:36:24] "GET /clasificaciones/P001300 HTTP/1.1" 200 -
+2024-12-27 09:36:24,740 - INFO - 127.0.0.1 - - [27/Dec/2024 09:36:24] "GET /localizaciones?folioPedido=P001300 HTTP/1.1" 200 -
+2024-12-27 09:36:25,274 - INFO - 127.0.0.1 - - [27/Dec/2024 09:36:25] "GET /clasificaciones/P0013000 HTTP/1.1" 200 -
+2024-12-27 09:36:25,498 - INFO - 127.0.0.1 - - [27/Dec/2024 09:36:25] "GET /localizaciones?folioPedido=P0013000 HTTP/1.1" 200 -
+2024-12-27 09:36:26,123 - INFO - 127.0.0.1 - - [27/Dec/2024 09:36:26] "GET /clasificaciones/P00130000 HTTP/1.1" 200 -
+2024-12-27 09:36:26,515 - INFO - 127.0.0.1 - - [27/Dec/2024 09:36:26] "GET /localizaciones?folioPedido=P00130000 HTTP/1.1" 200 -
+2024-12-27 09:36:26,976 - INFO - 127.0.0.1 - - [27/Dec/2024 09:36:26] "GET /clasificaciones/P001300000 HTTP/1.1" 200 -
+2024-12-27 09:36:27,400 - INFO - 127.0.0.1 - - [27/Dec/2024 09:36:27] "GET /localizaciones?folioPedido=P001300000 HTTP/1.1" 200 -
+2024-12-27 09:36:28,113 - INFO - 127.0.0.1 - - [27/Dec/2024 09:36:28] "GET /clasificaciones/P0013000000 HTTP/1.1" 200 -
+2024-12-27 09:36:28,539 - INFO - 127.0.0.1 - - [27/Dec/2024 09:36:28] "GET /localizaciones?folioPedido=P0013000000 HTTP/1.1" 200 -
+2024-12-27 09:36:30,033 - INFO - 127.0.0.1 - - [27/Dec/2024 09:36:30] "GET /clasificaciones/P00130000002 HTTP/1.1" 200 -
+2024-12-27 09:36:30,406 - INFO - 127.0.0.1 - - [27/Dec/2024 09:36:30] "GET /localizaciones?folioPedido=P00130000002 HTTP/1.1" 200 -
+2024-12-27 09:36:31,513 - INFO - 127.0.0.1 - - [27/Dec/2024 09:36:31] "GET /clasificaciones/P001300000024 HTTP/1.1" 200 -
+2024-12-27 09:36:31,918 - INFO - 127.0.0.1 - - [27/Dec/2024 09:36:31] "GET /localizaciones?folioPedido=P001300000024 HTTP/1.1" 200 -
+2024-12-27 09:36:32,228 - INFO - 127.0.0.1 - - [27/Dec/2024 09:36:32] "GET /localizaciones?folioPedido=P HTTP/1.1" 200 -
+2024-12-27 09:36:34,670 - INFO - 127.0.0.1 - - [27/Dec/2024 09:36:34] "GET /clasificaciones/P0013000000247 HTTP/1.1" 200 -
+2024-12-27 09:36:34,972 - INFO - 127.0.0.1 - - [27/Dec/2024 09:36:34] "GET /localizaciones?folioPedido=P0013000000247 HTTP/1.1" 200 -
+2024-12-27 09:36:35,420 - INFO - 127.0.0.1 - - [27/Dec/2024 09:36:35] "GET /clasificaciones/P00130000002476 HTTP/1.1" 200 -
+2024-12-27 09:36:35,815 - INFO - 127.0.0.1 - - [27/Dec/2024 09:36:35] "GET /localizaciones?folioPedido=P00130000002476 HTTP/1.1" 200 -
+2024-12-27 09:36:38,514 - INFO - 127.0.0.1 - - [27/Dec/2024 09:36:38] "GET /localizaciones?folioPedido=P0 HTTP/1.1" 200 -
+2024-12-27 09:36:41,986 - INFO - 127.0.0.1 - - [27/Dec/2024 09:36:41] "GET /localizaciones?folioPedido=P00 HTTP/1.1" 200 -
+2024-12-27 09:36:41,995 - INFO - 127.0.0.1 - - [27/Dec/2024 09:36:41] "GET /data?page=1&per_page=100&folioPedido=P00130000002476 HTTP/1.1" 200 -
+2024-12-27 09:36:42,382 - INFO - 127.0.0.1 - - [27/Dec/2024 09:36:42] "GET /localizaciones?folioPedido=P001 HTTP/1.1" 200 -
+2024-12-27 09:36:42,864 - INFO - 127.0.0.1 - - [27/Dec/2024 09:36:42] "GET /localizaciones?folioPedido=P0013 HTTP/1.1" 200 -
+2024-12-27 09:36:43,917 - INFO - 127.0.0.1 - - [27/Dec/2024 09:36:43] "GET /localizaciones?folioPedido=P00130 HTTP/1.1" 200 -
+2024-12-27 09:36:44,798 - INFO - 127.0.0.1 - - [27/Dec/2024 09:36:44] "GET /localizaciones?folioPedido=P001300 HTTP/1.1" 200 -
+2024-12-27 09:36:45,524 - INFO - 127.0.0.1 - - [27/Dec/2024 09:36:45] "GET /localizaciones?folioPedido=P0013000 HTTP/1.1" 200 -
+2024-12-27 09:36:46,486 - INFO - 127.0.0.1 - - [27/Dec/2024 09:36:46] "GET /localizaciones?folioPedido=P00130000 HTTP/1.1" 200 -
+2024-12-27 09:36:47,808 - INFO - 127.0.0.1 - - [27/Dec/2024 09:36:47] "GET /localizaciones?folioPedido=P001300000 HTTP/1.1" 200 -
+2024-12-27 09:36:48,539 - INFO - 127.0.0.1 - - [27/Dec/2024 09:36:48] "GET /localizaciones?folioPedido=P0013000000 HTTP/1.1" 200 -
+2024-12-27 09:36:50,346 - INFO - 127.0.0.1 - - [27/Dec/2024 09:36:50] "GET /localizaciones?folioPedido=P00130000002 HTTP/1.1" 200 -
+2024-12-27 09:36:51,739 - INFO - 127.0.0.1 - - [27/Dec/2024 09:36:51] "GET /localizaciones?folioPedido=P001300000024 HTTP/1.1" 200 -
+2024-12-27 09:36:54,943 - INFO - 127.0.0.1 - - [27/Dec/2024 09:36:54] "GET /localizaciones?folioPedido=P0013000000247 HTTP/1.1" 200 -
+2024-12-27 09:36:55,678 - INFO - 127.0.0.1 - - [27/Dec/2024 09:36:55] "GET /localizaciones?folioPedido=P00130000002476 HTTP/1.1" 200 -
+2024-12-27 09:38:35,780 - INFO - 127.0.0.1 - - [27/Dec/2024 09:38:35] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-27 09:38:36,413 - INFO - 127.0.0.1 - - [27/Dec/2024 09:38:36] "GET /localizaciones HTTP/1.1" 200 -
+2024-12-27 09:38:53,941 - INFO - 127.0.0.1 - - [27/Dec/2024 09:38:53] "GET /localizaciones HTTP/1.1" 200 -
+2024-12-27 09:38:57,770 - INFO - 127.0.0.1 - - [27/Dec/2024 09:38:57] "GET /data?page=2&per_page=100 HTTP/1.1" 200 -
+2024-12-27 09:39:49,486 - INFO - 127.0.0.1 - - [27/Dec/2024 09:39:49] "GET /clasificaciones/P HTTP/1.1" 200 -
+2024-12-27 09:39:50,596 - INFO - 127.0.0.1 - - [27/Dec/2024 09:39:50] "GET /clasificaciones/P0 HTTP/1.1" 200 -
+2024-12-27 09:39:51,852 - INFO - 127.0.0.1 - - [27/Dec/2024 09:39:51] "GET /clasificaciones/P00 HTTP/1.1" 200 -
+2024-12-27 09:39:52,561 - INFO - 127.0.0.1 - - [27/Dec/2024 09:39:52] "GET /clasificaciones/P001 HTTP/1.1" 200 -
+2024-12-27 09:39:53,081 - INFO - 127.0.0.1 - - [27/Dec/2024 09:39:53] "GET /clasificaciones/P0013 HTTP/1.1" 200 -
+2024-12-27 09:39:53,834 - INFO - 127.0.0.1 - - [27/Dec/2024 09:39:53] "GET /localizaciones?folioPedido=P0013 HTTP/1.1" 200 -
+2024-12-27 09:39:54,008 - INFO - 127.0.0.1 - - [27/Dec/2024 09:39:54] "GET /localizaciones?folioPedido=P0 HTTP/1.1" 200 -
+2024-12-27 09:39:54,170 - INFO - 127.0.0.1 - - [27/Dec/2024 09:39:54] "GET /localizaciones?folioPedido=P HTTP/1.1" 200 -
+2024-12-27 09:39:54,199 - INFO - 127.0.0.1 - - [27/Dec/2024 09:39:54] "GET /localizaciones?folioPedido=P001 HTTP/1.1" 200 -
+2024-12-27 09:39:54,465 - INFO - 127.0.0.1 - - [27/Dec/2024 09:39:54] "GET /localizaciones?folioPedido=P00 HTTP/1.1" 200 -
+2024-12-27 09:39:54,963 - INFO - 127.0.0.1 - - [27/Dec/2024 09:39:54] "GET /clasificaciones/P00130 HTTP/1.1" 200 -
+2024-12-27 09:39:55,102 - INFO - 127.0.0.1 - - [27/Dec/2024 09:39:55] "GET /clasificaciones/P001300 HTTP/1.1" 200 -
+2024-12-27 09:39:55,795 - INFO - 127.0.0.1 - - [27/Dec/2024 09:39:55] "GET /localizaciones?folioPedido=P00130 HTTP/1.1" 200 -
+2024-12-27 09:39:56,001 - INFO - 127.0.0.1 - - [27/Dec/2024 09:39:56] "GET /localizaciones?folioPedido=P001300 HTTP/1.1" 200 -
+2024-12-27 09:39:56,093 - INFO - 127.0.0.1 - - [27/Dec/2024 09:39:56] "GET /clasificaciones/P0013000 HTTP/1.1" 200 -
+2024-12-27 09:39:56,861 - INFO - 127.0.0.1 - - [27/Dec/2024 09:39:56] "GET /clasificaciones/P00130000 HTTP/1.1" 200 -
+2024-12-27 09:39:57,037 - INFO - 127.0.0.1 - - [27/Dec/2024 09:39:57] "GET /localizaciones?folioPedido=P0013000 HTTP/1.1" 200 -
+2024-12-27 09:39:57,045 - INFO - 127.0.0.1 - - [27/Dec/2024 09:39:57] "GET /localizaciones?folioPedido=P0013 HTTP/1.1" 200 -
+2024-12-27 09:39:57,150 - INFO - 127.0.0.1 - - [27/Dec/2024 09:39:57] "GET /clasificaciones/P001300000 HTTP/1.1" 200 -
+2024-12-27 09:39:57,320 - INFO - 127.0.0.1 - - [27/Dec/2024 09:39:57] "GET /localizaciones?folioPedido=P00130000 HTTP/1.1" 200 -
+2024-12-27 09:39:57,630 - INFO - 127.0.0.1 - - [27/Dec/2024 09:39:57] "GET /clasificaciones/P0013000000 HTTP/1.1" 200 -
+2024-12-27 09:39:57,733 - INFO - 127.0.0.1 - - [27/Dec/2024 09:39:57] "GET /localizaciones?folioPedido=P001300000 HTTP/1.1" 200 -
+2024-12-27 09:39:58,071 - INFO - 127.0.0.1 - - [27/Dec/2024 09:39:58] "GET /localizaciones?folioPedido=P0013000000 HTTP/1.1" 200 -
+2024-12-27 09:40:02,124 - INFO - 127.0.0.1 - - [27/Dec/2024 09:40:02] "GET /data?page=2&per_page=100&folioPedido=P0013000000 HTTP/1.1" 200 -
+2024-12-27 09:40:02,862 - INFO - 127.0.0.1 - - [27/Dec/2024 09:40:02] "GET /localizaciones?folioPedido=P0 HTTP/1.1" 200 -
+2024-12-27 09:40:11,769 - INFO - 127.0.0.1 - - [27/Dec/2024 09:40:11] "GET /localizaciones?folioPedido=P HTTP/1.1" 200 -
+2024-12-27 09:40:13,097 - INFO - 127.0.0.1 - - [27/Dec/2024 09:40:13] "GET /localizaciones?folioPedido=P001 HTTP/1.1" 200 -
+2024-12-27 09:40:13,428 - INFO - 127.0.0.1 - - [27/Dec/2024 09:40:13] "GET /localizaciones?folioPedido=P00 HTTP/1.1" 200 -
+2024-12-27 09:40:14,943 - INFO - 127.0.0.1 - - [27/Dec/2024 09:40:14] "GET /localizaciones?folioPedido=P00130 HTTP/1.1" 200 -
+2024-12-27 09:40:15,193 - INFO - 127.0.0.1 - - [27/Dec/2024 09:40:15] "GET /localizaciones?folioPedido=P001300 HTTP/1.1" 200 -
+2024-12-27 09:40:16,045 - INFO - 127.0.0.1 - - [27/Dec/2024 09:40:16] "GET /localizaciones?folioPedido=P0013000 HTTP/1.1" 200 -
+2024-12-27 09:40:16,801 - INFO - 127.0.0.1 - - [27/Dec/2024 09:40:16] "GET /localizaciones?folioPedido=P00130000 HTTP/1.1" 200 -
+2024-12-27 09:40:17,132 - INFO - 127.0.0.1 - - [27/Dec/2024 09:40:17] "GET /localizaciones?folioPedido=P001300000 HTTP/1.1" 200 -
+2024-12-27 09:40:17,768 - INFO - 127.0.0.1 - - [27/Dec/2024 09:40:17] "GET /localizaciones?folioPedido=P0013000000 HTTP/1.1" 200 -
+2024-12-27 09:41:40,252 - INFO - 127.0.0.1 - - [27/Dec/2024 09:41:40] "GET /localizaciones?folioPedido=P00130000002 HTTP/1.1" 200 -
+2024-12-27 09:41:40,291 - INFO - 127.0.0.1 - - [27/Dec/2024 09:41:40] "GET /clasificaciones/P00130000002 HTTP/1.1" 200 -
+2024-12-27 09:41:40,660 - INFO - 127.0.0.1 - - [27/Dec/2024 09:41:40] "GET /clasificaciones/P001300000024 HTTP/1.1" 200 -
+2024-12-27 09:41:41,527 - INFO - 127.0.0.1 - - [27/Dec/2024 09:41:41] "GET /localizaciones?folioPedido=P001300000024 HTTP/1.1" 200 -
+2024-12-27 09:41:41,756 - INFO - 127.0.0.1 - - [27/Dec/2024 09:41:41] "GET /clasificaciones/P0013000000247 HTTP/1.1" 200 -
+2024-12-27 09:41:42,224 - INFO - 127.0.0.1 - - [27/Dec/2024 09:41:42] "GET /clasificaciones/P00130000002476 HTTP/1.1" 200 -
+2024-12-27 09:41:42,251 - INFO - 127.0.0.1 - - [27/Dec/2024 09:41:42] "GET /localizaciones?folioPedido=P0013000000247 HTTP/1.1" 200 -
+2024-12-27 09:41:42,576 - INFO - 127.0.0.1 - - [27/Dec/2024 09:41:42] "GET /localizaciones?folioPedido=P00130000002476 HTTP/1.1" 200 -
+2024-12-27 09:41:48,251 - INFO - 127.0.0.1 - - [27/Dec/2024 09:41:48] "GET /data?page=2&per_page=100&folioPedido=P00130000002476 HTTP/1.1" 200 -
+2024-12-27 09:42:00,019 - INFO - 127.0.0.1 - - [27/Dec/2024 09:42:00] "GET /localizaciones?folioPedido=P00130000002 HTTP/1.1" 200 -
+2024-12-27 09:42:00,895 - INFO - 127.0.0.1 - - [27/Dec/2024 09:42:00] "GET /localizaciones?folioPedido=P001300000024 HTTP/1.1" 200 -
+2024-12-27 09:42:02,112 - INFO - 127.0.0.1 - - [27/Dec/2024 09:42:02] "GET /localizaciones?folioPedido=P0013000000247 HTTP/1.1" 200 -
+2024-12-27 09:42:02,447 - INFO - 127.0.0.1 - - [27/Dec/2024 09:42:02] "GET /localizaciones?folioPedido=P00130000002476 HTTP/1.1" 200 -
+2024-12-27 09:42:28,297 - INFO - 127.0.0.1 - - [27/Dec/2024 09:42:28] "GET /data?page=1&per_page=100&folioPedido=P00130000002476 HTTP/1.1" 200 -
+2024-12-27 09:42:42,138 - INFO - 127.0.0.1 - - [27/Dec/2024 09:42:42] "GET /clasificaciones/P001300000024 HTTP/1.1" 200 -
+2024-12-27 09:42:42,238 - INFO - 127.0.0.1 - - [27/Dec/2024 09:42:42] "GET /clasificaciones/P0013000000247 HTTP/1.1" 200 -
+2024-12-27 09:42:42,714 - INFO - 127.0.0.1 - - [27/Dec/2024 09:42:42] "GET /localizaciones?folioPedido=P0013000000247 HTTP/1.1" 200 -
+2024-12-27 09:42:42,718 - INFO - 127.0.0.1 - - [27/Dec/2024 09:42:42] "GET /localizaciones?folioPedido=P001300000024 HTTP/1.1" 200 -
+2024-12-27 09:42:44,413 - INFO - 127.0.0.1 - - [27/Dec/2024 09:42:44] "GET /localizaciones?folioPedido=P0013000000247 HTTP/1.1" 200 -
+2024-12-27 09:42:44,915 - INFO - 127.0.0.1 - - [27/Dec/2024 09:42:44] "GET /localizaciones?folioPedido=P001300000024 HTTP/1.1" 200 -
+2024-12-27 09:42:46,666 - INFO - 127.0.0.1 - - [27/Dec/2024 09:42:46] "GET /data?page=1&per_page=100&folioPedido=P001300000024 HTTP/1.1" 200 -
+2024-12-27 09:43:04,407 - INFO - 127.0.0.1 - - [27/Dec/2024 09:43:04] "GET /clasificaciones/P0013000000247 HTTP/1.1" 200 -
+2024-12-27 09:43:04,731 - INFO - 127.0.0.1 - - [27/Dec/2024 09:43:04] "GET /localizaciones?folioPedido=P0013000000247 HTTP/1.1" 200 -
+2024-12-27 09:43:06,483 - INFO - 127.0.0.1 - - [27/Dec/2024 09:43:06] "GET /localizaciones?folioPedido=P0013000000247 HTTP/1.1" 200 -
+2024-12-27 09:43:10,629 - INFO - 127.0.0.1 - - [27/Dec/2024 09:43:10] "GET /data?page=1&per_page=100&folioPedido=P0013000000247 HTTP/1.1" 200 -
+2024-12-27 09:43:23,405 - INFO - 127.0.0.1 - - [27/Dec/2024 09:43:23] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-27 09:43:26,375 - INFO - 127.0.0.1 - - [27/Dec/2024 09:43:26] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-27 09:43:26,539 - INFO - 127.0.0.1 - - [27/Dec/2024 09:43:26] "GET /localizaciones HTTP/1.1" 200 -
+2024-12-27 09:43:33,372 - INFO - 127.0.0.1 - - [27/Dec/2024 09:43:33] "GET /localizaciones HTTP/1.1" 200 -
+2024-12-27 09:43:34,446 - INFO - Iniciando proceso de sincronización
+2024-12-27 09:43:34,738 - INFO - 127.0.0.1 - - [27/Dec/2024 09:43:34] "POST /sync HTTP/1.1" 200 -
+2024-12-27 09:43:39,353 - INFO - 127.0.0.1 - - [27/Dec/2024 09:43:39] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-27 09:43:50,934 - INFO - 127.0.0.1 - - [27/Dec/2024 09:43:50] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-27 09:43:51,885 - INFO - 127.0.0.1 - - [27/Dec/2024 09:43:51] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-27 09:43:54,128 - INFO - 127.0.0.1 - - [27/Dec/2024 09:43:54] "GET /localizaciones HTTP/1.1" 200 -
+2024-12-27 09:43:55,938 - INFO - 127.0.0.1 - - [27/Dec/2024 09:43:55] "GET /clasificaciones/P00130000002476 HTTP/1.1" 200 -
+2024-12-27 09:43:56,378 - INFO - 127.0.0.1 - - [27/Dec/2024 09:43:56] "GET /localizaciones?folioPedido=P00130000002476 HTTP/1.1" 200 -
+2024-12-27 09:43:59,024 - INFO - 127.0.0.1 - - [27/Dec/2024 09:43:59] "GET /localizaciones HTTP/1.1" 200 -
+2024-12-27 09:43:59,302 - INFO - 127.0.0.1 - - [27/Dec/2024 09:43:59] "GET /localizaciones?folioPedido=P00130000002476 HTTP/1.1" 200 -
+2024-12-27 09:44:02,235 - INFO - 127.0.0.1 - - [27/Dec/2024 09:44:02] "GET /data?page=1&per_page=100&folioPedido=P00130000002476 HTTP/1.1" 200 -
+2024-12-27 09:44:30,017 - INFO - 127.0.0.1 - - [27/Dec/2024 09:44:30] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-27 09:44:31,527 - INFO - 127.0.0.1 - - [27/Dec/2024 09:44:31] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-27 09:44:33,249 - INFO - 127.0.0.1 - - [27/Dec/2024 09:44:33] "GET /localizaciones HTTP/1.1" 200 -
+2024-12-27 09:44:37,666 - INFO - 127.0.0.1 - - [27/Dec/2024 09:44:37] "GET /localizaciones HTTP/1.1" 200 -
+2024-12-27 09:45:14,644 - INFO - 127.0.0.1 - - [27/Dec/2024 09:45:14] "GET /localizaciones?folioPedido=P00350000000002 HTTP/1.1" 200 -
+2024-12-27 09:45:15,039 - INFO - 127.0.0.1 - - [27/Dec/2024 09:45:15] "GET /clasificaciones/P00350000000002 HTTP/1.1" 200 -
+2024-12-27 09:45:17,218 - INFO - 127.0.0.1 - - [27/Dec/2024 09:45:17] "GET /localizaciones?folioPedido=P00350000000002 HTTP/1.1" 200 -
+2024-12-27 09:45:20,991 - INFO - 127.0.0.1 - - [27/Dec/2024 09:45:20] "GET /data?page=1&per_page=100&folioPedido=P00350000000002 HTTP/1.1" 200 -
+2024-12-27 09:45:42,696 - INFO - 127.0.0.1 - - [27/Dec/2024 09:45:42] "GET /data?page=1&per_page=100&folioPedido=P00350000000002&sort_field=localizacion&sort_direction=asc HTTP/1.1" 200 -
+2024-12-27 09:46:29,566 - INFO - 127.0.0.1 - - [27/Dec/2024 09:46:29] "GET /data?page=1&per_page=100&folioPedido=P00350000000002&descripcion_clasificacion=CLASIFICASION+1&sort_field=localizacion&sort_direction=asc HTTP/1.1" 200 -
+2024-12-27 09:47:13,032 - INFO - 127.0.0.1 - - [27/Dec/2024 09:47:13] "GET /data?page=1&per_page=100&folioPedido=P00350000000002&sort_field=localizacion&sort_direction=asc HTTP/1.1" 200 -
+2024-12-27 09:48:50,608 - INFO - 127.0.0.1 - - [27/Dec/2024 09:48:50] "GET /data?page=1&per_page=100&folioPedido=P00350000000002&descripcion_clasificacion=CLASIFICASION+1&sort_field=localizacion&sort_direction=asc HTTP/1.1" 200 -
+2024-12-27 09:49:39,852 - INFO - 127.0.0.1 - - [27/Dec/2024 09:49:39] "OPTIONS /data/28 HTTP/1.1" 200 -
+2024-12-27 09:49:41,650 - INFO - 127.0.0.1 - - [27/Dec/2024 09:49:41] "PUT /data/28 HTTP/1.1" 200 -
+2024-12-27 09:49:49,656 - INFO - 127.0.0.1 - - [27/Dec/2024 09:49:49] "GET /data?page=1&per_page=100&folioPedido=P00350000000002&descripcion_clasificacion=CLASIFICASION+1&sort_field=localizacion&sort_direction=asc HTTP/1.1" 200 -
+2024-12-27 09:50:09,209 - INFO - 127.0.0.1 - - [27/Dec/2024 09:50:09] "GET /generate-excel/P00350000000002 HTTP/1.1" 200 -
+2024-12-27 09:50:32,561 - INFO - 127.0.0.1 - - [27/Dec/2024 09:50:32] "OPTIONS /data/33 HTTP/1.1" 200 -
+2024-12-27 09:50:34,266 - INFO - 127.0.0.1 - - [27/Dec/2024 09:50:34] "OPTIONS /data/33 HTTP/1.1" 200 -
+2024-12-27 09:50:35,706 - INFO - 127.0.0.1 - - [27/Dec/2024 09:50:35] "PUT /data/33 HTTP/1.1" 200 -
+2024-12-27 09:50:36,407 - INFO - 127.0.0.1 - - [27/Dec/2024 09:50:36] "PUT /data/33 HTTP/1.1" 200 -
+2024-12-27 09:50:45,035 - INFO - 127.0.0.1 - - [27/Dec/2024 09:50:45] "GET /data?page=1&per_page=100&folioPedido=P00350000000002&descripcion_clasificacion=CLASIFICASION+1&sort_field=localizacion&sort_direction=asc HTTP/1.1" 200 -
+2024-12-27 09:50:50,859 - INFO - 127.0.0.1 - - [27/Dec/2024 09:50:50] "GET /generate-excel/P00350000000002 HTTP/1.1" 200 -
+2024-12-27 09:51:14,194 - INFO - 127.0.0.1 - - [27/Dec/2024 09:51:14] "GET /generate-excel/P00350000000002 HTTP/1.1" 200 -
+2024-12-27 09:52:28,624 - INFO - 127.0.0.1 - - [27/Dec/2024 09:52:28] "GET /generate-excel/P00350000000002 HTTP/1.1" 200 -
+2024-12-27 09:55:56,140 - INFO - 127.0.0.1 - - [27/Dec/2024 09:55:56] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-27 09:55:58,153 - INFO - 127.0.0.1 - - [27/Dec/2024 09:55:58] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-27 09:55:59,444 - INFO - 127.0.0.1 - - [27/Dec/2024 09:55:59] "GET /localizaciones HTTP/1.1" 200 -
+2024-12-27 09:56:05,643 - INFO - 127.0.0.1 - - [27/Dec/2024 09:56:05] "GET /localizaciones HTTP/1.1" 200 -
+2024-12-27 09:56:08,749 - INFO - 127.0.0.1 - - [27/Dec/2024 09:56:08] "GET /localizaciones?folioPedido=P00350000000005 HTTP/1.1" 200 -
+2024-12-27 09:56:09,153 - INFO - 127.0.0.1 - - [27/Dec/2024 09:56:09] "GET /clasificaciones/P00350000000005 HTTP/1.1" 200 -
+2024-12-27 09:56:10,243 - INFO - 127.0.0.1 - - [27/Dec/2024 09:56:10] "GET /localizaciones?folioPedido=P00350000000005 HTTP/1.1" 200 -
+2024-12-27 09:56:14,148 - INFO - 127.0.0.1 - - [27/Dec/2024 09:56:14] "GET /data?page=1&per_page=100&folioPedido=P00350000000005 HTTP/1.1" 200 -
+2024-12-27 09:56:32,938 - INFO - 127.0.0.1 - - [27/Dec/2024 09:56:32] "GET /data?page=1&per_page=100&folioPedido=P00350000000005&descripcion_clasificacion=CLASIFICACION+2 HTTP/1.1" 200 -
+2024-12-27 09:58:45,371 - INFO - 127.0.0.1 - - [27/Dec/2024 09:58:45] "OPTIONS /data/95 HTTP/1.1" 200 -
+2024-12-27 09:58:45,633 - INFO - 127.0.0.1 - - [27/Dec/2024 09:58:45] "OPTIONS /data/95 HTTP/1.1" 200 -
+2024-12-27 09:58:46,341 - INFO - 127.0.0.1 - - [27/Dec/2024 09:58:46] "PUT /data/95 HTTP/1.1" 200 -
+2024-12-27 09:58:46,401 - INFO - 127.0.0.1 - - [27/Dec/2024 09:58:46] "PUT /data/95 HTTP/1.1" 200 -
+2024-12-27 09:58:54,258 - INFO - 127.0.0.1 - - [27/Dec/2024 09:58:54] "GET /data?page=1&per_page=100&folioPedido=P00350000000005&descripcion_clasificacion=CLASIFICACION+2 HTTP/1.1" 200 -
+2024-12-27 09:59:08,751 - INFO - 127.0.0.1 - - [27/Dec/2024 09:59:08] "OPTIONS /data/103 HTTP/1.1" 200 -
+2024-12-27 09:59:09,635 - INFO - 127.0.0.1 - - [27/Dec/2024 09:59:09] "PUT /data/103 HTTP/1.1" 200 -
+2024-12-27 09:59:09,694 - INFO - 127.0.0.1 - - [27/Dec/2024 09:59:09] "PUT /data/103 HTTP/1.1" 200 -
+2024-12-27 09:59:16,978 - INFO - 127.0.0.1 - - [27/Dec/2024 09:59:16] "GET /data?page=1&per_page=100&folioPedido=P00350000000005&descripcion_clasificacion=CLASIFICACION+2 HTTP/1.1" 200 -
+2024-12-27 09:59:30,772 - INFO - 127.0.0.1 - - [27/Dec/2024 09:59:30] "OPTIONS /data/125 HTTP/1.1" 200 -
+2024-12-27 09:59:31,089 - INFO - 127.0.0.1 - - [27/Dec/2024 09:59:31] "PUT /data/125 HTTP/1.1" 200 -
+2024-12-27 09:59:38,329 - INFO - 127.0.0.1 - - [27/Dec/2024 09:59:38] "GET /data?page=1&per_page=100&folioPedido=P00350000000005&descripcion_clasificacion=CLASIFICACION+2 HTTP/1.1" 200 -
+2024-12-27 10:03:47,112 - INFO - 127.0.0.1 - - [27/Dec/2024 10:03:47] "GET /generate-excel/P00350000000005 HTTP/1.1" 200 -
+2024-12-27 10:03:51,285 - INFO - 127.0.0.1 - - [27/Dec/2024 10:03:51] "GET /generate-excel/P00350000000005 HTTP/1.1" 200 -
+2024-12-27 10:08:20,324 - INFO - 127.0.0.1 - - [27/Dec/2024 10:08:20] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-27 10:08:21,848 - INFO - 127.0.0.1 - - [27/Dec/2024 10:08:21] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-27 10:08:23,573 - INFO - 127.0.0.1 - - [27/Dec/2024 10:08:23] "GET /localizaciones HTTP/1.1" 200 -
+2024-12-27 10:08:28,654 - INFO - 127.0.0.1 - - [27/Dec/2024 10:08:28] "GET /localizaciones HTTP/1.1" 200 -
+2024-12-27 10:08:36,804 - INFO - 127.0.0.1 - - [27/Dec/2024 10:08:36] "GET /data?page=2&per_page=100 HTTP/1.1" 200 -
+2024-12-27 10:09:00,259 - INFO - 127.0.0.1 - - [27/Dec/2024 10:09:00] "GET /localizaciones?folioPedido=P00350000000007 HTTP/1.1" 200 -
+2024-12-27 10:09:00,666 - INFO - 127.0.0.1 - - [27/Dec/2024 10:09:00] "GET /clasificaciones/P00350000000007 HTTP/1.1" 200 -
+2024-12-27 10:09:02,259 - INFO - 127.0.0.1 - - [27/Dec/2024 10:09:02] "GET /localizaciones?folioPedido=P00350000000007 HTTP/1.1" 200 -
+2024-12-27 10:09:06,544 - INFO - 127.0.0.1 - - [27/Dec/2024 10:09:06] "GET /data?page=2&per_page=100&folioPedido=P00350000000007 HTTP/1.1" 200 -
+2024-12-27 10:09:13,551 - INFO - 127.0.0.1 - - [27/Dec/2024 10:09:13] "GET /data?page=1&per_page=100&folioPedido=P00350000000007 HTTP/1.1" 200 -
+2024-12-27 10:10:02,363 - INFO - 127.0.0.1 - - [27/Dec/2024 10:10:02] "GET /data?page=1&per_page=100&folioPedido=P00350000000007&sort_field=localizacion&sort_direction=asc HTTP/1.1" 200 -
+2024-12-27 10:10:22,147 - INFO - 127.0.0.1 - - [27/Dec/2024 10:10:22] "GET /data?page=1&per_page=100&folioPedido=P00350000000007&descripcion_clasificacion=CLASIFICASION+1&sort_field=localizacion&sort_direction=asc HTTP/1.1" 200 -
+2024-12-27 10:11:00,383 - INFO - 127.0.0.1 - - [27/Dec/2024 10:11:00] "OPTIONS /data/220 HTTP/1.1" 200 -
+2024-12-27 10:11:00,928 - INFO - 127.0.0.1 - - [27/Dec/2024 10:11:00] "PUT /data/220 HTTP/1.1" 200 -
+2024-12-27 10:11:09,474 - INFO - 127.0.0.1 - - [27/Dec/2024 10:11:09] "GET /data?page=1&per_page=100&folioPedido=P00350000000007&descripcion_clasificacion=CLASIFICASION+1&sort_field=localizacion&sort_direction=asc HTTP/1.1" 200 -
+2024-12-27 10:12:13,709 - INFO - 127.0.0.1 - - [27/Dec/2024 10:12:13] "OPTIONS /data/187 HTTP/1.1" 200 -
+2024-12-27 10:12:15,906 - INFO - 127.0.0.1 - - [27/Dec/2024 10:12:15] "PUT /data/187 HTTP/1.1" 200 -
+2024-12-27 10:12:23,252 - INFO - 127.0.0.1 - - [27/Dec/2024 10:12:23] "GET /data?page=1&per_page=100&folioPedido=P00350000000007&descripcion_clasificacion=CLASIFICASION+1&sort_field=localizacion&sort_direction=asc HTTP/1.1" 200 -
+2024-12-27 10:13:11,884 - INFO - 127.0.0.1 - - [27/Dec/2024 10:13:11] "GET /generate-excel/P00350000000007 HTTP/1.1" 200 -
+2024-12-27 10:18:38,826 - INFO - 127.0.0.1 - - [27/Dec/2024 10:18:38] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-27 10:18:40,979 - INFO - 127.0.0.1 - - [27/Dec/2024 10:18:40] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-27 10:18:41,960 - INFO - 127.0.0.1 - - [27/Dec/2024 10:18:41] "GET /localizaciones HTTP/1.1" 200 -
+2024-12-27 10:25:39,192 - INFO - 127.0.0.1 - - [27/Dec/2024 10:25:39] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-27 10:25:40,531 - INFO - 127.0.0.1 - - [27/Dec/2024 10:25:40] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-27 10:25:42,723 - INFO - 127.0.0.1 - - [27/Dec/2024 10:25:42] "GET /localizaciones HTTP/1.1" 200 -
+2024-12-27 10:25:48,408 - INFO - 127.0.0.1 - - [27/Dec/2024 10:25:48] "GET /localizaciones HTTP/1.1" 200 -
+2024-12-27 10:26:24,907 - INFO - 127.0.0.1 - - [27/Dec/2024 10:26:24] "GET /clasificaciones/P HTTP/1.1" 200 -
+2024-12-27 10:26:25,019 - INFO - 127.0.0.1 - - [27/Dec/2024 10:26:25] "GET /clasificaciones/P0 HTTP/1.1" 200 -
+2024-12-27 10:26:25,812 - INFO - 127.0.0.1 - - [27/Dec/2024 10:26:25] "GET /clasificaciones/P00 HTTP/1.1" 200 -
+2024-12-27 10:26:25,831 - INFO - 127.0.0.1 - - [27/Dec/2024 10:26:25] "GET /clasificaciones/P000 HTTP/1.1" 200 -
+2024-12-27 10:26:26,822 - INFO - 127.0.0.1 - - [27/Dec/2024 10:26:26] "GET /localizaciones?folioPedido=P000 HTTP/1.1" 200 -
+2024-12-27 10:26:27,138 - INFO - 127.0.0.1 - - [27/Dec/2024 10:26:27] "GET /clasificaciones/P0002 HTTP/1.1" 200 -
+2024-12-27 10:26:27,642 - INFO - 127.0.0.1 - - [27/Dec/2024 10:26:27] "GET /localizaciones?folioPedido=P0002 HTTP/1.1" 200 -
+2024-12-27 10:26:28,090 - INFO - 127.0.0.1 - - [27/Dec/2024 10:26:28] "GET /localizaciones?folioPedido=P0 HTTP/1.1" 200 -
+2024-12-27 10:26:28,625 - INFO - 127.0.0.1 - - [27/Dec/2024 10:26:28] "GET /localizaciones?folioPedido=P00 HTTP/1.1" 200 -
+2024-12-27 10:26:28,806 - INFO - 127.0.0.1 - - [27/Dec/2024 10:26:28] "GET /localizaciones?folioPedido=P HTTP/1.1" 200 -
+2024-12-27 10:26:29,010 - INFO - 127.0.0.1 - - [27/Dec/2024 10:26:29] "GET /clasificaciones/P00020 HTTP/1.1" 200 -
+2024-12-27 10:26:29,529 - INFO - 127.0.0.1 - - [27/Dec/2024 10:26:29] "GET /localizaciones?folioPedido=P00020 HTTP/1.1" 200 -
+2024-12-27 10:26:29,585 - INFO - 127.0.0.1 - - [27/Dec/2024 10:26:29] "GET /localizaciones?folioPedido=P000 HTTP/1.1" 200 -
+2024-12-27 10:26:30,066 - INFO - 127.0.0.1 - - [27/Dec/2024 10:26:30] "GET /clasificaciones/P000200 HTTP/1.1" 200 -
+2024-12-27 10:26:30,400 - INFO - 127.0.0.1 - - [27/Dec/2024 10:26:30] "GET /localizaciones?folioPedido=P000200 HTTP/1.1" 200 -
+2024-12-27 10:26:31,163 - INFO - 127.0.0.1 - - [27/Dec/2024 10:26:31] "GET /clasificaciones/P0002000 HTTP/1.1" 200 -
+2024-12-27 10:26:31,770 - INFO - 127.0.0.1 - - [27/Dec/2024 10:26:31] "GET /localizaciones?folioPedido=P0002000 HTTP/1.1" 200 -
+2024-12-27 10:26:32,287 - INFO - 127.0.0.1 - - [27/Dec/2024 10:26:32] "GET /clasificaciones/P00020000 HTTP/1.1" 200 -
+2024-12-27 10:26:32,529 - INFO - 127.0.0.1 - - [27/Dec/2024 10:26:32] "GET /localizaciones?folioPedido=P0002 HTTP/1.1" 200 -
+2024-12-27 10:26:32,846 - INFO - 127.0.0.1 - - [27/Dec/2024 10:26:32] "GET /localizaciones?folioPedido=P00020000 HTTP/1.1" 200 -
+2024-12-27 10:26:33,152 - INFO - 127.0.0.1 - - [27/Dec/2024 10:26:33] "GET /clasificaciones/P000200000 HTTP/1.1" 200 -
+2024-12-27 10:26:33,771 - INFO - 127.0.0.1 - - [27/Dec/2024 10:26:33] "GET /localizaciones?folioPedido=P000200000 HTTP/1.1" 200 -
+2024-12-27 10:26:34,297 - INFO - 127.0.0.1 - - [27/Dec/2024 10:26:34] "GET /clasificaciones/P0002000000 HTTP/1.1" 200 -
+2024-12-27 10:26:34,773 - INFO - 127.0.0.1 - - [27/Dec/2024 10:26:34] "GET /localizaciones?folioPedido=P0002000000 HTTP/1.1" 200 -
+2024-12-27 10:26:35,034 - INFO - 127.0.0.1 - - [27/Dec/2024 10:26:35] "GET /localizaciones?folioPedido=P0 HTTP/1.1" 200 -
+2024-12-27 10:26:35,830 - INFO - 127.0.0.1 - - [27/Dec/2024 10:26:35] "GET /clasificaciones/P00020000000 HTTP/1.1" 200 -
+2024-12-27 10:26:36,304 - INFO - 127.0.0.1 - - [27/Dec/2024 10:26:36] "GET /localizaciones?folioPedido=P00020000000 HTTP/1.1" 200 -
+2024-12-27 10:26:37,270 - INFO - 127.0.0.1 - - [27/Dec/2024 10:26:37] "GET /clasificaciones/P000200000002 HTTP/1.1" 200 -
+2024-12-27 10:26:37,390 - INFO - 127.0.0.1 - - [27/Dec/2024 10:26:37] "GET /clasificaciones/P0002000000021 HTTP/1.1" 200 -
+2024-12-27 10:26:37,530 - INFO - 127.0.0.1 - - [27/Dec/2024 10:26:37] "GET /localizaciones?folioPedido=P000200000002 HTTP/1.1" 200 -
+2024-12-27 10:26:37,867 - INFO - 127.0.0.1 - - [27/Dec/2024 10:26:37] "GET /localizaciones?folioPedido=P0002000000021 HTTP/1.1" 200 -
+2024-12-27 10:26:38,474 - INFO - 127.0.0.1 - - [27/Dec/2024 10:26:38] "GET /clasificaciones/P00020000000214 HTTP/1.1" 200 -
+2024-12-27 10:26:38,892 - INFO - 127.0.0.1 - - [27/Dec/2024 10:26:38] "GET /localizaciones?folioPedido=P00020000000214 HTTP/1.1" 200 -
+2024-12-27 10:26:44,864 - INFO - 127.0.0.1 - - [27/Dec/2024 10:26:44] "GET /data?page=1&per_page=100&folioPedido=P00020000000214 HTTP/1.1" 200 -
+2024-12-27 10:26:45,674 - INFO - 127.0.0.1 - - [27/Dec/2024 10:26:45] "GET /localizaciones?folioPedido=P00 HTTP/1.1" 200 -
+2024-12-27 10:26:47,616 - INFO - 127.0.0.1 - - [27/Dec/2024 10:26:47] "GET /localizaciones?folioPedido=P HTTP/1.1" 200 -
+2024-12-27 10:26:48,991 - INFO - 127.0.0.1 - - [27/Dec/2024 10:26:48] "GET /localizaciones?folioPedido=P00020 HTTP/1.1" 200 -
+2024-12-27 10:26:51,732 - INFO - 127.0.0.1 - - [27/Dec/2024 10:26:51] "GET /localizaciones?folioPedido=P000200 HTTP/1.1" 200 -
+2024-12-27 10:26:51,808 - INFO - 127.0.0.1 - - [27/Dec/2024 10:26:51] "GET /localizaciones?folioPedido=P0002000 HTTP/1.1" 200 -
+2024-12-27 10:26:52,684 - INFO - 127.0.0.1 - - [27/Dec/2024 10:26:52] "GET /localizaciones?folioPedido=P00020000 HTTP/1.1" 200 -
+2024-12-27 10:26:53,640 - INFO - 127.0.0.1 - - [27/Dec/2024 10:26:53] "GET /localizaciones?folioPedido=P000200000 HTTP/1.1" 200 -
+2024-12-27 10:26:54,551 - INFO - 127.0.0.1 - - [27/Dec/2024 10:26:54] "GET /localizaciones?folioPedido=P0002000000 HTTP/1.1" 200 -
+2024-12-27 10:26:56,106 - INFO - 127.0.0.1 - - [27/Dec/2024 10:26:56] "GET /localizaciones?folioPedido=P00020000000 HTTP/1.1" 200 -
+2024-12-27 10:26:57,365 - INFO - 127.0.0.1 - - [27/Dec/2024 10:26:57] "GET /localizaciones?folioPedido=P000200000002 HTTP/1.1" 200 -
+2024-12-27 10:26:57,680 - INFO - 127.0.0.1 - - [27/Dec/2024 10:26:57] "GET /localizaciones?folioPedido=P0002000000021 HTTP/1.1" 200 -
+2024-12-27 10:26:58,693 - INFO - 127.0.0.1 - - [27/Dec/2024 10:26:58] "GET /localizaciones?folioPedido=P00020000000214 HTTP/1.1" 200 -
+2024-12-27 10:27:33,591 - INFO - 127.0.0.1 - - [27/Dec/2024 10:27:33] "GET /localizaciones HTTP/1.1" 200 -
+2024-12-27 10:27:34,017 - INFO - 127.0.0.1 - - [27/Dec/2024 10:27:34] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-27 10:27:37,827 - INFO - 127.0.0.1 - - [27/Dec/2024 10:27:37] "GET /localizaciones HTTP/1.1" 200 -
+2024-12-27 10:27:50,283 - INFO - 127.0.0.1 - - [27/Dec/2024 10:27:50] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-27 10:27:53,396 - INFO - 127.0.0.1 - - [27/Dec/2024 10:27:53] "GET /localizaciones HTTP/1.1" 200 -
+2024-12-27 10:28:04,405 - INFO - 127.0.0.1 - - [27/Dec/2024 10:28:04] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-27 10:28:11,263 - INFO - 127.0.0.1 - - [27/Dec/2024 10:28:11] "GET /localizaciones HTTP/1.1" 200 -
+2024-12-27 10:28:11,814 - INFO - 127.0.0.1 - - [27/Dec/2024 10:28:11] "GET /clasificaciones/P HTTP/1.1" 200 -
+2024-12-27 10:28:13,086 - INFO - 127.0.0.1 - - [27/Dec/2024 10:28:13] "GET /clasificaciones/P0 HTTP/1.1" 200 -
+2024-12-27 10:28:13,891 - INFO - 127.0.0.1 - - [27/Dec/2024 10:28:13] "GET /clasificaciones/P00 HTTP/1.1" 200 -
+2024-12-27 10:28:15,274 - INFO - 127.0.0.1 - - [27/Dec/2024 10:28:15] "GET /localizaciones?folioPedido=P HTTP/1.1" 200 -
+2024-12-27 10:28:15,460 - INFO - 127.0.0.1 - - [27/Dec/2024 10:28:15] "GET /localizaciones?folioPedido=P0 HTTP/1.1" 200 -
+2024-12-27 10:28:16,278 - INFO - 127.0.0.1 - - [27/Dec/2024 10:28:16] "GET /localizaciones?folioPedido=P00 HTTP/1.1" 200 -
+2024-12-27 10:28:16,367 - INFO - 127.0.0.1 - - [27/Dec/2024 10:28:16] "GET /clasificaciones/P000 HTTP/1.1" 200 -
+2024-12-27 10:28:17,006 - INFO - 127.0.0.1 - - [27/Dec/2024 10:28:17] "GET /localizaciones?folioPedido=P000 HTTP/1.1" 200 -
+2024-12-27 10:28:17,442 - INFO - 127.0.0.1 - - [27/Dec/2024 10:28:17] "GET /clasificaciones/P0002 HTTP/1.1" 200 -
+2024-12-27 10:28:17,703 - INFO - 127.0.0.1 - - [27/Dec/2024 10:28:17] "GET /localizaciones?folioPedido=P0002 HTTP/1.1" 200 -
+2024-12-27 10:28:23,609 - INFO - 127.0.0.1 - - [27/Dec/2024 10:28:23] "GET /data?page=1&per_page=100&folioPedido=P0002 HTTP/1.1" 200 -
+2024-12-27 10:28:30,074 - INFO - 127.0.0.1 - - [27/Dec/2024 10:28:30] "GET /localizaciones?folioPedido=P HTTP/1.1" 200 -
+2024-12-27 10:28:33,998 - INFO - 127.0.0.1 - - [27/Dec/2024 10:28:33] "GET /localizaciones?folioPedido=P0 HTTP/1.1" 200 -
+2024-12-27 10:28:35,769 - INFO - 127.0.0.1 - - [27/Dec/2024 10:28:35] "GET /localizaciones?folioPedido=P00 HTTP/1.1" 200 -
+2024-12-27 10:28:36,707 - INFO - 127.0.0.1 - - [27/Dec/2024 10:28:36] "GET /localizaciones?folioPedido=P000 HTTP/1.1" 200 -
+2024-12-27 10:28:37,735 - INFO - 127.0.0.1 - - [27/Dec/2024 10:28:37] "GET /localizaciones?folioPedido=P0002 HTTP/1.1" 200 -
+2024-12-27 10:28:45,037 - INFO - 127.0.0.1 - - [27/Dec/2024 10:28:45] "GET /clasificaciones/P00020 HTTP/1.1" 200 -
+2024-12-27 10:28:45,411 - INFO - 127.0.0.1 - - [27/Dec/2024 10:28:45] "GET /localizaciones?folioPedido=P00020 HTTP/1.1" 200 -
+2024-12-27 10:28:45,648 - INFO - 127.0.0.1 - - [27/Dec/2024 10:28:45] "GET /clasificaciones/P000200 HTTP/1.1" 200 -
+2024-12-27 10:28:46,090 - INFO - 127.0.0.1 - - [27/Dec/2024 10:28:46] "GET /localizaciones?folioPedido=P000200 HTTP/1.1" 200 -
+2024-12-27 10:28:46,628 - INFO - 127.0.0.1 - - [27/Dec/2024 10:28:46] "GET /clasificaciones/P0002000 HTTP/1.1" 200 -
+2024-12-27 10:28:47,060 - INFO - 127.0.0.1 - - [27/Dec/2024 10:28:47] "GET /localizaciones?folioPedido=P0002000 HTTP/1.1" 200 -
+2024-12-27 10:28:47,177 - INFO - 127.0.0.1 - - [27/Dec/2024 10:28:47] "GET /clasificaciones/P00020000 HTTP/1.1" 200 -
+2024-12-27 10:28:47,532 - INFO - 127.0.0.1 - - [27/Dec/2024 10:28:47] "GET /localizaciones?folioPedido=P00020000 HTTP/1.1" 200 -
+2024-12-27 10:28:48,013 - INFO - 127.0.0.1 - - [27/Dec/2024 10:28:48] "GET /clasificaciones/P000200000 HTTP/1.1" 200 -
+2024-12-27 10:28:48,164 - INFO - 127.0.0.1 - - [27/Dec/2024 10:28:48] "GET /localizaciones?folioPedido=P000200000 HTTP/1.1" 200 -
+2024-12-27 10:28:48,652 - INFO - 127.0.0.1 - - [27/Dec/2024 10:28:48] "GET /clasificaciones/P0002000000 HTTP/1.1" 200 -
+2024-12-27 10:28:49,079 - INFO - 127.0.0.1 - - [27/Dec/2024 10:28:49] "GET /localizaciones?folioPedido=P0002000000 HTTP/1.1" 200 -
+2024-12-27 10:28:49,171 - INFO - 127.0.0.1 - - [27/Dec/2024 10:28:49] "GET /clasificaciones/P00020000000 HTTP/1.1" 200 -
+2024-12-27 10:28:49,528 - INFO - 127.0.0.1 - - [27/Dec/2024 10:28:49] "GET /localizaciones?folioPedido=P00020000000 HTTP/1.1" 200 -
+2024-12-27 10:28:55,294 - INFO - 127.0.0.1 - - [27/Dec/2024 10:28:55] "GET /data?page=1&per_page=100&folioPedido=P00020000000 HTTP/1.1" 200 -
+2024-12-27 10:28:58,588 - INFO - 127.0.0.1 - - [27/Dec/2024 10:28:58] "GET /localizaciones?folioPedido=P00020 HTTP/1.1" 200 -
+2024-12-27 10:28:58,719 - INFO - 127.0.0.1 - - [27/Dec/2024 10:28:58] "GET /localizaciones?folioPedido=P000200 HTTP/1.1" 200 -
+2024-12-27 10:28:58,861 - INFO - 127.0.0.1 - - [27/Dec/2024 10:28:58] "GET /localizaciones?folioPedido=P0002000 HTTP/1.1" 200 -
+2024-12-27 10:28:58,916 - INFO - 127.0.0.1 - - [27/Dec/2024 10:28:58] "GET /localizaciones?folioPedido=P00020000 HTTP/1.1" 200 -
+2024-12-27 10:28:59,075 - INFO - 127.0.0.1 - - [27/Dec/2024 10:28:59] "GET /localizaciones?folioPedido=P000200000 HTTP/1.1" 200 -
+2024-12-27 10:28:59,118 - INFO - 127.0.0.1 - - [27/Dec/2024 10:28:59] "GET /localizaciones?folioPedido=P0002000000 HTTP/1.1" 200 -
+2024-12-27 10:28:59,135 - INFO - 127.0.0.1 - - [27/Dec/2024 10:28:59] "GET /localizaciones?folioPedido=P00020000000 HTTP/1.1" 200 -
+2024-12-27 10:29:03,622 - INFO - 127.0.0.1 - - [27/Dec/2024 10:29:03] "GET /clasificaciones/P000200000002 HTTP/1.1" 200 -
+2024-12-27 10:29:04,583 - INFO - 127.0.0.1 - - [27/Dec/2024 10:29:04] "GET /clasificaciones/P0002000000021 HTTP/1.1" 200 -
+2024-12-27 10:29:04,715 - INFO - 127.0.0.1 - - [27/Dec/2024 10:29:04] "GET /localizaciones?folioPedido=P000200000002 HTTP/1.1" 200 -
+2024-12-27 10:29:05,021 - INFO - 127.0.0.1 - - [27/Dec/2024 10:29:05] "GET /localizaciones?folioPedido=P0002000000021 HTTP/1.1" 200 -
+2024-12-27 10:29:05,601 - INFO - 127.0.0.1 - - [27/Dec/2024 10:29:05] "GET /clasificaciones/P00020000000214 HTTP/1.1" 200 -
+2024-12-27 10:29:06,085 - INFO - 127.0.0.1 - - [27/Dec/2024 10:29:06] "GET /localizaciones?folioPedido=P00020000000214 HTTP/1.1" 200 -
+2024-12-27 10:29:06,433 - INFO - 127.0.0.1 - - [27/Dec/2024 10:29:06] "GET /localizaciones?folioPedido=P000200000002 HTTP/1.1" 200 -
+2024-12-27 10:29:06,975 - INFO - 127.0.0.1 - - [27/Dec/2024 10:29:06] "GET /localizaciones?folioPedido=P0002000000021 HTTP/1.1" 200 -
+2024-12-27 10:29:08,223 - INFO - 127.0.0.1 - - [27/Dec/2024 10:29:08] "GET /localizaciones?folioPedido=P00020000000214 HTTP/1.1" 200 -
+2024-12-27 10:29:11,612 - INFO - 127.0.0.1 - - [27/Dec/2024 10:29:11] "GET /data?page=1&per_page=100&folioPedido=P00020000000214 HTTP/1.1" 200 -
+2024-12-27 10:29:24,917 - INFO - 127.0.0.1 - - [27/Dec/2024 10:29:24] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-27 10:29:27,247 - INFO - 127.0.0.1 - - [27/Dec/2024 10:29:27] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-27 10:29:28,084 - INFO - 127.0.0.1 - - [27/Dec/2024 10:29:28] "GET /localizaciones HTTP/1.1" 200 -
+2024-12-27 10:29:32,199 - INFO - 127.0.0.1 - - [27/Dec/2024 10:29:32] "GET /localizaciones HTTP/1.1" 200 -
+2024-12-27 10:29:32,327 - INFO - Iniciando proceso de sincronización
+2024-12-27 10:29:37,525 - INFO - Se agregaron 179 registros nuevos
+2024-12-27 10:29:37,525 - INFO - Ejemplo de registro insertado:
+ID=5153837
+Folio=PC0001010031762
+Código=7501349022126
+-------------------
+2024-12-27 10:29:37,525 - INFO - Ejemplo de registro insertado:
+ID=5153838
+Folio=PC0001010031762
+Código=7501349022874
+-------------------
+2024-12-27 10:29:37,525 - INFO - Ejemplo de registro insertado:
+ID=5153839
+Folio=PC0001010031762
+Código=7501349024267
+-------------------
+2024-12-27 10:29:37,526 - INFO - Ejemplo de registro insertado:
+ID=5153840
+Folio=PC0001010031762
+Código=7501349028364
+-------------------
+2024-12-27 10:29:37,526 - INFO - Ejemplo de registro insertado:
+ID=5153841
+Folio=PC0001010031762
+Código=7501385490316
+-------------------
+2024-12-27 10:29:37,527 - INFO - 127.0.0.1 - - [27/Dec/2024 10:29:37] "POST /sync HTTP/1.1" 200 -
+2024-12-27 10:29:40,377 - INFO - 127.0.0.1 - - [27/Dec/2024 10:29:40] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-27 10:29:48,829 - INFO - 127.0.0.1 - - [27/Dec/2024 10:29:48] "GET /clasificaciones/P00020000000214 HTTP/1.1" 200 -
+2024-12-27 10:29:49,107 - INFO - 127.0.0.1 - - [27/Dec/2024 10:29:49] "GET /localizaciones?folioPedido=P00020000000214 HTTP/1.1" 200 -
+2024-12-27 10:29:51,252 - INFO - 127.0.0.1 - - [27/Dec/2024 10:29:51] "GET /localizaciones?folioPedido=P00020000000214 HTTP/1.1" 200 -
+2024-12-27 10:29:54,906 - INFO - 127.0.0.1 - - [27/Dec/2024 10:29:54] "GET /data?page=1&per_page=100&folioPedido=P00020000000214 HTTP/1.1" 200 -
+2024-12-27 10:39:24,112 - INFO - 127.0.0.1 - - [27/Dec/2024 10:39:24] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-27 10:39:25,409 - INFO - 127.0.0.1 - - [27/Dec/2024 10:39:25] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-27 10:39:27,602 - INFO - 127.0.0.1 - - [27/Dec/2024 10:39:27] "GET /localizaciones HTTP/1.1" 200 -
+2024-12-27 10:39:32,368 - INFO - 127.0.0.1 - - [27/Dec/2024 10:39:32] "GET /localizaciones HTTP/1.1" 200 -
+2024-12-27 10:39:34,563 - INFO - Iniciando proceso de sincronización
+2024-12-27 10:39:39,808 - INFO - Se agregaron 91 registros nuevos
+2024-12-27 10:39:39,809 - INFO - Ejemplo de registro insertado:
+ID=5154016
+Folio=PC0001010031762
+Código=7502221010798
+-------------------
+2024-12-27 10:39:39,809 - INFO - Ejemplo de registro insertado:
+ID=5154017
+Folio=PC0001010031762
+Código=7502221010811
+-------------------
+2024-12-27 10:39:39,809 - INFO - Ejemplo de registro insertado:
+ID=5154018
+Folio=PC0001010031762
+Código=7502221013218
+-------------------
+2024-12-27 10:39:39,809 - INFO - Ejemplo de registro insertado:
+ID=5154019
+Folio=PC0001010031762
+Código=7502221182150
+-------------------
+2024-12-27 10:39:39,810 - INFO - Ejemplo de registro insertado:
+ID=5154020
+Folio=PC0001010031762
+Código=7502221182198
+-------------------
+2024-12-27 10:39:39,811 - INFO - 127.0.0.1 - - [27/Dec/2024 10:39:39] "POST /sync HTTP/1.1" 200 -
+2024-12-27 10:39:40,624 - INFO - 127.0.0.1 - - [27/Dec/2024 10:39:40] "GET /data?page=1&per_page=100 HTTP/1.1" 200 -
+2024-12-27 10:39:51,887 - INFO - 127.0.0.1 - - [27/Dec/2024 10:39:51] "GET /clasificaciones/P00130000002476 HTTP/1.1" 200 -
+2024-12-27 10:39:52,337 - INFO - 127.0.0.1 - - [27/Dec/2024 10:39:52] "GET /localizaciones?folioPedido=P00130000002476 HTTP/1.1" 200 -
+2024-12-27 10:39:54,209 - INFO - 127.0.0.1 - - [27/Dec/2024 10:39:54] "GET /localizaciones?folioPedido=P00130000002476 HTTP/1.1" 200 -
+2024-12-27 10:39:58,046 - INFO - 127.0.0.1 - - [27/Dec/2024 10:39:58] "GET /data?page=1&per_page=100&folioPedido=P00130000002476 HTTP/1.1" 200 -

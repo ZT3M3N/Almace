@@ -43,6 +43,7 @@ def migrate_data():
             folioPedido TEXT,
             cantidadPedida REAL,
             cantidadVerificada REAL,
+            nombreVerificador TEXT,
             codigoRelacionado TEXT,
             descripcion_producto TEXT,
             codigoFamiliaUno TEXT,

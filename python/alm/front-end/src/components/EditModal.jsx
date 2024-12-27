@@ -5,8 +5,8 @@ import "../EditModal.css";
 function EditModal({ item, onClose, onSave }) {
   const [editedItem, setEditedItem] = useState({
     ...item,
-    id: item.id,
-    cantidadVerificada: item.cantidadVerificada || "", // Usamos string vacío si es null
+    cantidadVerificada: item.cantidadVerificada || "",
+    nombreVerificador: item.nombreVerificador || "",
   });
 
   const handleChange = (field, value) => {
@@ -18,14 +18,14 @@ function EditModal({ item, onClose, onSave }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const dataToSave = {
-      id: editedItem.id,
+    onSave({
+      id: item.id,
       cantidadVerificada:
         editedItem.cantidadVerificada === ""
           ? null
           : parseInt(editedItem.cantidadVerificada),
-    };
-    onSave(dataToSave);
+      nombreVerificador: editedItem.nombreVerificador,
+    });
   };
 
   return (
@@ -47,6 +47,21 @@ function EditModal({ item, onClose, onSave }) {
             />
           </div>
 
+          <div className="form-group">
+            <label>Nombre del Verificador:</label>
+            <input
+              type="text"
+              value={editedItem.nombreVerificador}
+              onChange={(e) =>
+                setEditedItem((prev) => ({
+                  ...prev,
+                  nombreVerificador: e.target.value,
+                }))
+              }
+              required
+            />
+          </div>
+
           <div className="modal-buttons">
             <button type="submit" className="save-button">
               Guardar
@@ -65,6 +80,7 @@ EditModal.propTypes = {
   item: PropTypes.shape({
     id: PropTypes.string.isRequired,
     cantidadVerificada: PropTypes.number.isRequired,
+    nombreVerificador: PropTypes.string,
   }).isRequired,
   onClose: PropTypes.func.isRequired,
   onSave: PropTypes.func.isRequired,
